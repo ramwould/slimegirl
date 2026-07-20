@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://fx/ParticleEffect.tscn" type="PackedScene" id=1]
+[ext_resource path="res://slimegirl/ramwould/FX/sprites/smal_circle01.tres" type="Texture" id=2]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=3]
+[ext_resource path="res://slimegirl/ramwould/FX/sprites/big_smoke01.png" type="Texture" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 3 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0, 0 ), 0.0, 0.282353, 0, 0, Vector2( 0.0984848, 0.472727 ), 1.25455, 1.25455, 0, 0, Vector2( 0.128788, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.575758, 0.917045 ), -0.308572, -0.308572, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=3]
+colors = PoolColorArray( 1, 1, 1, 1, 0.6875, 0.6875, 0.6875, 1 )
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 1
+
+[sub_resource type="Curve" id=5]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.55303, 0.779545 ), -0.505263, -0.505263, 0, 0, Vector2( 1, 0 ), -3.11539, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=6]
+colors = PoolColorArray( 1, 1, 1, 1, 0.690196, 0.690196, 0.690196, 0 )
+
+[sub_resource type="Gradient" id=7]
+colors = PoolColorArray( 1, 1, 1, 1, 0.778809, 0.778809, 0.778809, 1 )
+
+[node name="ParticleEffect" instance=ExtResource( 1 )]
+material = SubResource( 1 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." index="1"]
+amount = 120
+speed_scale = 4.0
+lifetime_randomness = 0.7
+texture = ExtResource( 2 )
+emission_shape = 1
+emission_sphere_radius = 220.0
+gravity = Vector2( 0, 0 )
+orbit_velocity = 0.3
+radial_accel = -700.0
+damping = 250.0
+scale_amount = 0.8
+scale_amount_random = 0.87
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 3 )
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="." index="2"]
+amount = 80
+lifetime = 0.7
+speed_scale = 4.0
+lifetime_randomness = 0.7
+texture = ExtResource( 2 )
+emission_shape = 1
+emission_sphere_radius = 120.0
+gravity = Vector2( 0, 0 )
+orbit_velocity = -0.2
+radial_accel = -700.0
+damping = 250.0
+scale_amount = 1.5
+scale_amount_random = 0.5
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 3 )
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="." index="3"]
+material = SubResource( 4 )
+amount = 7
+speed_scale = 5.0
+local_coords = false
+texture = ExtResource( 4 )
+gravity = Vector2( 0, 0 )
+scale_amount = 4.0
+scale_amount_curve = SubResource( 5 )
+color = Color( 1, 1, 1, 0.105882 )
+color_ramp = SubResource( 6 )
+color_initial_ramp = SubResource( 7 )

@@ -1,0 +1,95 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://slimegirl/ramwould/projectiles/PoisonProjectile.gd" type="Script" id=1]
+[ext_resource path="res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd" type="Script" id=2]
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://sound/common/slash3.wav" type="AudioStream" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "Default",
+"speed": 5.0
+} ]
+
+[node name="ExplosionLite" instance=ExtResource( 3 )]
+script = ExtResource( 1 )
+deletes_other_projectiles = false
+movable = false
+allow_host_hit_cancelling = false
+allow_projectile_to_damage_slimegirl = false
+slime_color_to_use = ""
+uses_melee_hitboxes = false
+affected_by_tailwhip_detect = false
+on_fire_explosion = null
+on_fire_explosion_fx = null
+on_fire_hit_cancel = false
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 1 )
+animation = "Default"
+
+[node name="Default" parent="StateMachine" index="0"]
+move_x = 0
+clash = false
+lifetime = 10
+fizzle_on_ground = false
+fizzle_on_walls = false
+
+[node name="SlimeHitbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 15
+height = 21
+damage = 30
+hitstun_ticks = 16
+hitlag_ticks = 1
+victim_hitlag = 6
+screenshake_amount = 6
+bump_on_whiff = true
+whiff_sound = null
+hit_sound = ExtResource( 4 )
+hit_sound_volume = -8.0
+bass_on_whiff = true
+dir_y = "-0.50"
+knockback = "7.0"
+launch_reversible = true
+knockdown = true
+knockdown_extends_hitstun = false
+start_tick = 2
+active_ticks = 1
+misc_data = "projectile_poison"
+add_poison = true
+
+[node name="SlimeHitbox2" type="Node2D" parent="StateMachine/Default" index="1"]
+z_index = 1000
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 21
+height = 15
+damage = 30
+hitstun_ticks = 16
+hitlag_ticks = 1
+victim_hitlag = 6
+plus_frames = 3
+screenshake_amount = 6
+bump_on_whiff = true
+whiff_sound = null
+hit_sound = ExtResource( 4 )
+hit_sound_volume = -8.0
+bass_on_whiff = true
+dir_y = "-0.50"
+knockback = "7.0"
+launch_reversible = true
+knockdown = true
+knockdown_extends_hitstun = false
+start_tick = 2
+active_ticks = 1
+misc_data = "projectile_poison"
+add_poison = true

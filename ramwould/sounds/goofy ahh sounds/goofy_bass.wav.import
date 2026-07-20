@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/goofy_bass.wav-8ba723ef2fe6c41dde40a47afec70107.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/goofy_bass.wav"
+dest_files=[ "res://.import/goofy_bass.wav-8ba723ef2fe6c41dde40a47afec70107.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

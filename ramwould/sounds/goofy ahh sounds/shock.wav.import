@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shock.wav-d0f9d05da873280425c270727e367f83.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/shock.wav"
+dest_files=[ "res://.import/shock.wav-d0f9d05da873280425c270727e367f83.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

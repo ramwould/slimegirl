@@ -1,0 +1,129 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://slimegirl/ramwould/projectiles/Defaults/VenocacheBurst.gd" type="Script" id=2]
+[ext_resource path="res://sound/common/explosion4.wav" type="AudioStream" id=3]
+[ext_resource path="res://sound/common/explosion6.wav" type="AudioStream" id=4]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=5]
+[ext_resource path="res://addons/collision_box/CollisionBox.gd" type="Script" id=6]
+[ext_resource path="res://slimegirl/ramwould/projectiles/Defaults/VenocacheDefault.gd" type="Script" id=7]
+[ext_resource path="res://slimegirl/ramwould/projectiles/VenocacheProjectile.gd" type="Script" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "Default",
+"speed": 5.0
+} ]
+
+[node name="VenocacheProjectile" instance=ExtResource( 1 )]
+script = ExtResource( 8 )
+__meta__ = {
+"_editor_description_": "",
+"limb_data": {
+"Head": {
+},
+"LeftFoot": {
+},
+"LeftHand": {
+},
+"RightFoot": {
+},
+"RightHand": {
+}
+}
+}
+deletes_other_projectiles = false
+movable = false
+hookable = true
+allow_host_hit_cancelling = false
+allow_projectile_to_damage_slimegirl = false
+slime_color_to_use = "ffffff"
+uses_melee_hitboxes = false
+affected_by_tailwhip_detect = false
+on_fire_explosion = null
+on_fire_explosion_fx = null
+on_fire_hit_cancel = false
+explosion_data = [  ]
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 1 )
+animation = "Default"
+
+[node name="Default" parent="StateMachine" index="0"]
+script = ExtResource( 7 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Windbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 6 )
+width = 180
+height = 180
+can_draw = false
+
+[node name="Windbox2" type="Node2D" parent="StateMachine/Default" index="1"]
+z_index = 1000
+script = ExtResource( 6 )
+width = 210
+height = 140
+can_draw = false
+
+[node name="Windbox3" type="Node2D" parent="StateMachine/Default" index="2"]
+z_index = 1000
+script = ExtResource( 6 )
+width = 140
+height = 210
+can_draw = false
+
+[node name="Area" type="Node2D" parent="StateMachine/Default" index="3"]
+z_index = 1000
+script = ExtResource( 6 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 65
+height = 65
+can_draw = false
+
+[node name="Explosion" type="Node2D" parent="StateMachine" index="1"]
+script = ExtResource( 2 )
+fallback_state = "Default"
+sprite_animation = "Default"
+endless = true
+poison_2_damage_mod = "0.65"
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Explosion" index="0"]
+z_index = 1000
+script = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 150
+height = 150
+hitstun_ticks = 29
+hitlag_ticks = 11
+victim_hitlag = 14
+cancellable = false
+di_modifier = "0.8"
+ignore_armor = true
+can_clash = false
+hits_projectiles = false
+block_cancel_allowed = false
+plus_frames = -1
+screenshake_amount = 22
+bump_on_whiff = true
+whiff_sound = ExtResource( 4 )
+hit_sound = ExtResource( 3 )
+dir_x = "1.66"
+knockback = "8.0"
+launch_reversible = true
+block_pushback_modifier = "1.5"
+block_pushback_reversible = true
+grounded_hit_state = "HurtAerial"
+knockdown = true
+knockdown_extends_hitstun = false
+start_tick = 1
+active_ticks = 1

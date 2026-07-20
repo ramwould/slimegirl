@@ -1,0 +1,15 @@
+{
+  "author": "RamWould",
+  "client_side": false,
+  "description": "Some goofy ahh slime girl just crawled out of the toxic waste bin. And then they F...OUGHT!",
+  "friendly_name": "Slimegirl",
+  "id": "12345",
+  "link": "",
+  "name": "Slimegirl",
+  "overwrites": false,
+  "priority": 0,
+  "requires": [
+    ""
+  ],
+  "version": "1.7.0-pre04"
+}

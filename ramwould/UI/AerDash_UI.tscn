@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/ActionSelector/ActionUIData/ActionUIData.gd" type="Script" id=1]
+[ext_resource path="res://ui/XYPlot/XYPlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ui/ActionSelector/ActionUIData/ActionUIDataCheckButton.gd" type="Script" id=3]
+[ext_resource path="res://theme.tres" type="Theme" id=4]
+
+[node name="ActionUIData" type="VBoxContainer"]
+margin_right = 77.0
+margin_bottom = 79.0
+mouse_filter = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 4 )
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Air Dash Angle" parent="." instance=ExtResource( 2 )]
+unique_name_in_owner = true
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 8.0
+margin_right = 68.0
+size_flags_horizontal = 4
+min_length = 0.5
+default_value = Vector2( 0, -1 )
+
+[node name="Stance" type="CheckButton" parent="."]
+margin_top = 67.0
+margin_right = 77.0
+margin_bottom = 79.0
+text = "Exit Stance"
+align = 1
+script = ExtResource( 3 )

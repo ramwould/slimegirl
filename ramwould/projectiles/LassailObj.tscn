@@ -1,0 +1,242 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://slimegirl/ramwould/projectiles/sprites/lassail_proj.png" type="Texture" id=2]
+[ext_resource path="res://slimegirl/ramwould/projectiles/Defaults/LassailDefault.gd" type="Script" id=3]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=4]
+[ext_resource path="res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd" type="Script" id=5]
+[ext_resource path="res://slimegirl/ramwould/projectiles/LassailObj.gd" type="Script" id=6]
+[ext_resource path="res://characters/CharacterMaterial.tres" type="Material" id=7]
+[ext_resource path="res://slimegirl/ramwould/FX/SlimeProjTrailFX.tscn" type="PackedScene" id=8]
+[ext_resource path="res://slimegirl/ramwould/projectiles/CopybunyExplosion.tscn" type="PackedScene" id=9]
+[ext_resource path="res://slimegirl/ramwould/FX/ProjFireFX.tscn" type="PackedScene" id=10]
+[ext_resource path="res://slimegirl/ramwould/FX/CopybunyExplosionFX.tscn" type="PackedScene" id=11]
+[ext_resource path="res://slimegirl/ramwould/hitboxes/BeamHitbox.gd" type="Script" id=12]
+[ext_resource path="res://slimegirl/ramwould/FX/ColoredHitFlash_X.tscn" type="PackedScene" id=13]
+[ext_resource path="res://sound/common/explosion6.wav" type="AudioStream" id=14]
+[ext_resource path="res://slimegirl/ramwould/sounds/goofy ahh sounds/shot08.wav" type="AudioStream" id=15]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "Default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = ExtResource( 4 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=6]
+resource_local_to_scene = true
+shader = ExtResource( 4 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[node name="LassailObj" instance=ExtResource( 1 )]
+script = ExtResource( 6 )
+__meta__ = {
+"_editor_description_": ""
+}
+gravity = "0.25"
+air_friction = "0.1"
+extra_state_variables = "on_fire
+detached
+venocache_used
+last_vel_y"
+damages_own_team = true
+has_projectile_parry_window = false
+can_be_hit_by_melee = true
+hit_by_self_projectiles = true
+apply_hitlag_when_hit_by_melee = false
+allow_host_hit_cancelling = false
+allow_projectile_to_damage_slimegirl = false
+slime_color_to_use = "style_2"
+uses_melee_hitboxes = false
+affected_by_tailwhip_detect = false
+on_fire_explosion = ExtResource( 9 )
+on_fire_explosion_fx = ExtResource( 11 )
+on_fire_hit_cancel = false
+explosion_data = [  ]
+
+[node name="Sprite" parent="Flip" index="0"]
+material = ExtResource( 7 )
+frames = SubResource( 4 )
+animation = "Default"
+offset = Vector2( 1, -2 )
+
+[node name="Trail" parent="Flip/Particles" index="0" instance=ExtResource( 8 )]
+unique_name_in_owner = true
+material = SubResource( 5 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="FireTrail" parent="Flip/Particles" index="1" instance=ExtResource( 10 )]
+unique_name_in_owner = true
+material = SubResource( 6 )
+free = false
+one_shot = false
+start_enabled = false
+
+[node name="CollisionBox" parent="." index="2"]
+width = 16
+height = 16
+
+[node name="Hurtbox" parent="." index="3"]
+width = 10
+height = 10
+
+[node name="Default" parent="StateMachine" index="0"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_fric = true
+apply_grav = true
+ticks_per_frame = 3
+loop_animation = true
+detached = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 19
+height = 19
+damage = 22
+hitstun_ticks = 16
+hitlag_ticks = 3
+di_modifier = "0.46"
+sdi_modifier = "0.8"
+block_cancel_allowed = false
+plus_frames = 1
+whiff_sound = null
+knockback = "4.5"
+block_pushback_modifier = "1.1"
+start_tick = 2
+always_on = true
+looping = true
+loop_inactive_ticks = 4
+misc_data = "poison
+projectile_poison"
+fake_damage_mod = 1
+add_poison = true
+
+[node name="Detached" type="Node2D" parent="StateMachine" index="1"]
+script = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": ""
+}
+apply_forces = true
+apply_grav = true
+fallback_state = "Default"
+sprite_animation = "Default"
+ticks_per_frame = 3
+loop_animation = true
+endless = true
+detached = true
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Detached" index="0"]
+z_index = 1000
+script = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 19
+height = 19
+damage = 22
+chip_damage_modifier = "0.9"
+hitstun_ticks = 16
+hitlag_ticks = 3
+di_modifier = "0.46"
+sdi_modifier = "0.8"
+block_cancel_allowed = false
+plus_frames = 1
+whiff_sound = null
+knockback = "4.5"
+block_pushback_modifier = "1.1"
+start_tick = 2
+always_on = true
+looping = true
+loop_inactive_ticks = 4
+misc_data = "poison
+projectile_poison"
+fake_damage_mod = 1
+add_poison = true
+
+[node name="BeamHitbox" type="Node2D" parent="StateMachine/Detached" index="1"]
+unique_name_in_owner = true
+z_index = 1000
+script = ExtResource( 12 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 38
+height = 38
+activated = false
+hitstun_ticks = 11
+hitlag_ticks = 6
+victim_hitlag = 6
+cancellable = false
+hits_otg = true
+meter_gain_modifier = "0.5"
+can_clash = false
+screenshake_amount = 16
+hit_particle = ExtResource( 13 )
+camera_bump_dir = Vector2( 0, 1 )
+bump_on_whiff = true
+whiff_sound = ExtResource( 14 )
+hit_sound = ExtResource( 15 )
+whiff_sound_volume = -4.0
+hit_sound_volume = -3.0
+bass_on_whiff = true
+dir_y = "3.5"
+knockback = "8.0"
+block_pushback_modifier = "1.2"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+knockdown_extends_hitstun = false
+ground_bounce_knockback_modifier = "0.6"
+start_tick = 1
+active_ticks = 2
+misc_data = "poison
+projectile_poison"
+show_base = false
+can_shockwave = false
+startup_ticks = 12
+melee_hitbox = false

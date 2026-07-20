@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/long_kick_alt2.png-74a7b082a96689299a6ba08668b29c76.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sprites/attacks/longkick/long_kick_alt2.png"
+dest_files=[ "res://.import/long_kick_alt2.png-74a7b082a96689299a6ba08668b29c76.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

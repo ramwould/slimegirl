@@ -1,0 +1,143 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://slimegirl/ramwould/projectiles/sprites/beamshockwave.png" type="Texture" id=1]
+[ext_resource path="res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd" type="Script" id=2]
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://slimegirl/ramwould/sounds/goofy ahh sounds/hit_twang01.wav" type="AudioStream" id=4]
+[ext_resource path="res://slimegirl/ramwould/projectiles/BeamShockwave.gd" type="Script" id=5]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=6]
+[ext_resource path="res://slimegirl/ramwould/FX/SlimeProjTrailFX.tscn" type="PackedScene" id=7]
+[ext_resource path="res://slimegirl/ramwould/FX/ExplosionLite.tscn" type="PackedScene" id=8]
+[ext_resource path="res://slimegirl/ramwould/FX/ProjFireFX.tscn" type="PackedScene" id=9]
+[ext_resource path="res://slimegirl/ramwould/FX/ExplosionLiteFX.tscn" type="PackedScene" id=10]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "Default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = ExtResource( 6 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=6]
+resource_local_to_scene = true
+shader = ExtResource( 6 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[node name="BeamShockwave" instance=ExtResource( 3 )]
+script = ExtResource( 5 )
+can_be_hit_by_melee = true
+allow_host_hit_cancelling = false
+allow_projectile_to_damage_slimegirl = false
+slime_color_to_use = "style_2"
+uses_melee_hitboxes = false
+affected_by_tailwhip_detect = false
+on_fire_explosion = ExtResource( 8 )
+on_fire_explosion_fx = ExtResource( 10 )
+on_fire_hit_cancel = false
+explosion_data = [  ]
+
+[node name="Sprite" parent="Flip" index="0"]
+scale = Vector2( 1, 0.8 )
+frames = SubResource( 1 )
+animation = "Default"
+offset = Vector2( 3, -17 )
+
+[node name="Trail" parent="Flip/Particles" index="0" instance=ExtResource( 7 )]
+unique_name_in_owner = true
+material = SubResource( 5 )
+position = Vector2( 8, -3 )
+
+[node name="FireTrail" parent="Flip/Particles" index="1" instance=ExtResource( 9 )]
+unique_name_in_owner = true
+material = SubResource( 6 )
+free = false
+one_shot = false
+
+[node name="CollisionBox" parent="." index="2"]
+y = -2
+width = 15
+height = 4
+
+[node name="Hurtbox" parent="." index="3"]
+x = 7
+y = -3
+width = 8
+height = 5
+
+[node name="Default" parent="StateMachine" index="0"]
+__meta__ = {
+"_editor_description_": ""
+}
+ticks_per_frame = 3
+loop_animation = true
+move_x = 20
+clash = false
+fizzle_on_ground = false
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": ""
+}
+x = -11
+y = -2
+width = 26
+height = 3
+damage = 35
+hitstun_ticks = 12
+hitlag_ticks = 6
+hits_otg = true
+di_modifier = "1.5"
+plus_frames = 2
+hit_height = 2
+hit_sound = ExtResource( 4 )
+dir_y = "1.0"
+knockback = "4.0"
+grounded_hit_state = "HurtAerial"
+knockdown = true
+knockdown_extends_hitstun = false
+hard_knockdown = true
+start_tick = 3
+always_on = true
+misc_data = "projectile_poison"
+fake_damage_mod = 1
+add_poison = true

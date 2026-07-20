@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/noxipaste.wav-8f8fdf0e1a71071f6dcbf4ebed30f645.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/noxipaste.wav"
+dest_files=[ "res://.import/noxipaste.wav-8f8fdf0e1a71071f6dcbf4ebed30f645.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

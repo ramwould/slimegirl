@@ -1,0 +1,166 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://ui/ActionSelector/PlayerExtra.tscn" type="PackedScene" id=1]
+[ext_resource path="res://button_container_theme.tres" type="Theme" id=2]
+[ext_resource path="res://slimegirl/ramwould/SlimegirlExtra.gd" type="Script" id=3]
+[ext_resource path="res://ui/XYPlot/XYPlot.tscn" type="PackedScene" id=4]
+[ext_resource path="res://slimegirl/ramwould/UI/CopybunyHolder.tscn" type="PackedScene" id=6]
+
+[node name="SlimegirlExtra" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="0"]
+margin_top = 197.0
+margin_right = 300.0
+margin_bottom = 360.0
+size_flags_vertical = 8
+custom_constants/separation = 1
+alignment = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="VBoxContainer" index="0"]
+margin_right = 300.0
+margin_bottom = 74.0
+size_flags_horizontal = 5
+custom_constants/separation = -4
+
+[node name="Clone Position" parent="VBoxContainer/HBoxContainer" index="0" instance=ExtResource( 4 )]
+unique_name_in_owner = true
+anchor_right = 0.0
+anchor_bottom = 0.0
+limit_angle = true
+limit_range_degrees = 250.0
+limit_center_degrees = 90.0
+limit_symmetrical = false
+snap_angles = 2
+snap_align_to_limit_center = false
+
+[node name="Label" parent="VBoxContainer/HBoxContainer/Clone Position" index="2"]
+margin_right = 67.0
+text = "Clone Position"
+
+[node name="Copybuny" type="CheckButton" parent="VBoxContainer/HBoxContainer" index="1"]
+unique_name_in_owner = true
+modulate = Color( 0.956863, 0.623529, 1, 1 )
+show_behind_parent = true
+margin_top = 62.0
+margin_right = 70.0
+margin_bottom = 74.0
+hint_tooltip = "Use a super to create a clone of yourself during this move"
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme = ExtResource( 2 )
+text = "Copybuny"
+align = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" index="1"]
+margin_top = 75.0
+margin_right = 300.0
+margin_bottom = 163.0
+size_flags_stretch_ratio = 12.89
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2" index="0"]
+margin_right = 300.0
+margin_bottom = 88.0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+custom_constants/separation = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="0"]
+margin_right = 300.0
+margin_bottom = 48.0
+
+[node name="Copybuny Index" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer" index="0" instance=ExtResource( 6 )]
+unique_name_in_owner = true
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 126.0
+margin_bottom = 48.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer" index="1"]
+margin_left = 130.0
+margin_top = 36.0
+margin_right = 197.0
+margin_bottom = 48.0
+size_flags_vertical = 8
+custom_constants/separation = 0
+
+[node name="Clone Flipped" type="CheckButton" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer/VBoxContainer" index="0"]
+unique_name_in_owner = true
+margin_right = 67.0
+margin_bottom = 12.0
+size_flags_vertical = 8
+theme = ExtResource( 2 )
+text = "Flip Clone"
+align = 1
+
+[node name="Clone Detonate All" type="CheckButton" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer" index="2"]
+unique_name_in_owner = true
+margin_left = 201.0
+margin_top = 36.0
+margin_right = 300.0
+margin_bottom = 48.0
+size_flags_vertical = 8
+theme = ExtResource( 2 )
+text = "Explode In Aura"
+align = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="1"]
+margin_top = 49.0
+margin_right = 300.0
+margin_bottom = 61.0
+
+[node name="Detach" type="CheckButton" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2" index="0"]
+unique_name_in_owner = true
+margin_right = 56.0
+margin_bottom = 12.0
+hint_tooltip = "Remove any active goop"
+size_flags_horizontal = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0.392157, 0.823529, 0.419608, 1 )
+text = "Detach"
+align = 1
+
+[node name="Yank" type="CheckButton" parent="VBoxContainer/HBoxContainer2/VBoxContainer2/HBoxContainer2" index="1"]
+unique_name_in_owner = true
+margin_left = 60.0
+margin_right = 105.0
+margin_bottom = 12.0
+hint_tooltip = "Launch Slimegirl in the direction of the opponent"
+size_flags_horizontal = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0.392157, 0.823529, 0.419608, 1 )
+text = "Yank"
+align = 1
+
+[node name="FrictionCtrl" type="CheckButton" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="2"]
+unique_name_in_owner = true
+margin_top = 62.0
+margin_right = 85.0
+margin_bottom = 74.0
+hint_tooltip = "Increases Slimegirl's friction while on slimetrails"
+size_flags_horizontal = 0
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0.392157, 0.823529, 0.419608, 1 )
+text = "Add Frikshun"
+align = 1
+
+[node name="TeleportTextStopBeingWeird-inator" type="Control" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="3"]
+margin_top = 75.0
+margin_right = 300.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 50, 0 )
+
+[node name="Clone Label" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="4"]
+unique_name_in_owner = true
+margin_top = 76.0
+margin_right = 300.0
+margin_bottom = 88.0
+grow_vertical = 0
+rect_clip_content = false
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[wave]Teleport on Hold!"
+text = "Teleport on Hold!"
+fit_content_height = true
+
+[editable path="VBoxContainer/HBoxContainer/Clone Position"]

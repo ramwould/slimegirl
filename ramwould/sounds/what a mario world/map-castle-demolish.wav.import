@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/map-castle-demolish.wav-63679b2554aa94da2b43c6fa0be12371.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/what a mario world/map-castle-demolish.wav"
+dest_files=[ "res://.import/map-castle-demolish.wav-63679b2554aa94da2b43c6fa0be12371.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

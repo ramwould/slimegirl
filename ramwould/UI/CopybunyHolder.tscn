@@ -1,0 +1,67 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://button_container_theme.tres" type="Theme" id=2]
+[ext_resource path="res://slimegirl/ramwould/UI/CopybunyHolder.gd" type="Script" id=4]
+[ext_resource path="res://slimegirl/ramwould/UI/CopybunyHolderButton.gd" type="Script" id=5]
+
+[node name="Container" type="ScrollContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -523.0
+margin_bottom = -336.0
+rect_min_size = Vector2( 126, 48 )
+theme = ExtResource( 2 )
+follow_focus = true
+scroll_horizontal_enabled = false
+script = ExtResource( 4 )
+
+[node name="Options" type="VBoxContainer" parent="."]
+margin_right = 126.0
+margin_bottom = 48.0
+size_flags_horizontal = 3
+size_flags_vertical = 10
+custom_constants/separation = 0
+
+[node name="Button1" type="Button" parent="Options"]
+unique_name_in_owner = true
+margin_right = 126.0
+margin_bottom = 12.0
+theme = ExtResource( 2 )
+toggle_mode = true
+text = "No Clones Active"
+script = ExtResource( 5 )
+
+[node name="Button2" type="Button" parent="Options"]
+unique_name_in_owner = true
+margin_top = 12.0
+margin_right = 126.0
+margin_bottom = 24.0
+theme = ExtResource( 2 )
+toggle_mode = true
+text = "Short Name"
+script = ExtResource( 5 )
+
+[node name="Button3" type="Button" parent="Options"]
+unique_name_in_owner = true
+margin_top = 24.0
+margin_right = 126.0
+margin_bottom = 36.0
+theme = ExtResource( 2 )
+toggle_mode = true
+text = "Long Boi Name"
+script = ExtResource( 5 )
+
+[node name="Button4" type="Button" parent="Options"]
+unique_name_in_owner = true
+margin_top = 36.0
+margin_right = 126.0
+margin_bottom = 48.0
+theme = ExtResource( 2 )
+toggle_mode = true
+text = "A Super Very Long Name"
+script = ExtResource( 5 )
+
+[connection signal="toggled" from="Options/Button1" to="." method="_on_Button1_toggled"]
+[connection signal="toggled" from="Options/Button2" to="." method="_on_Button2_toggled"]
+[connection signal="toggled" from="Options/Button3" to="." method="_on_Button3_toggled"]
+[connection signal="toggled" from="Options/Button4" to="." method="_on_Button4_toggled"]

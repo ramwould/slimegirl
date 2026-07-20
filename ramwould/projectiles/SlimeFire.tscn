@@ -1,0 +1,95 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://slimegirl/ramwould/projectiles/SlimeFire.gd" type="Script" id=2]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=4]
+[ext_resource path="res://slimegirl/ramwould/projectiles/Defaults/SlimeFireDefault.gd" type="Script" id=6]
+[ext_resource path="res://characters/robo/projectiles/GroundFireEffectLoic.tscn" type="PackedScene" id=7]
+[ext_resource path="res://framework/VariableSound2D.gd" type="Script" id=8]
+[ext_resource path="res://characters/robo/sound/fire.wav" type="AudioStream" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=4]
+resource_local_to_scene = true
+shader = ExtResource( 4 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="CanvasItemMaterial" id=6]
+blend_mode = 1
+
+[sub_resource type="Gradient" id=5]
+offsets = PoolRealArray( 0, 0.102362, 0.275591, 0.373068, 0.503937, 1 )
+colors = PoolColorArray( 0.521569, 0.521569, 0.521569, 1, 0.2412, 0.31446, 0.36, 1, 0.59, 0.59, 0.59, 1, 0.71, 0.71, 0.71, 1, 1, 1, 1, 1, 0, 0, 0, 0 )
+
+[node name="SlimeFire" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+__meta__ = {
+"_editor_description_": ""
+}
+max_fall_speed = "15"
+extra_state_variables = "fire_length"
+deletes_other_projectiles = false
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 1 )
+
+[node name="fire_particles" parent="Flip/Particles" index="0" instance=ExtResource( 7 )]
+unique_name_in_owner = true
+material = SubResource( 4 )
+z_index = 5
+free = false
+one_shot = false
+
+[node name="CPUParticles2D2" parent="Flip/Particles/fire_particles" index="1"]
+material = SubResource( 6 )
+amount = 20
+color_ramp = SubResource( 5 )
+
+[node name="CPUParticles2D3" parent="Flip/Particles/fire_particles" index="2"]
+amount = 20
+color_ramp = SubResource( 5 )
+
+[node name="Fire" type="AudioStreamPlayer2D" parent="Sounds" index="0"]
+stream = ExtResource( 9 )
+volume_db = -20.0
+bus = "Fx"
+script = ExtResource( 8 )
+
+[node name="CollisionBox" parent="." index="2"]
+y = 100
+width = 1
+height = 1
+can_draw = false
+
+[node name="Hurtbox" parent="." index="3"]
+y = 100
+width = 1
+height = 1
+can_draw = false
+
+[node name="Default" parent="StateMachine" index="0"]
+script = ExtResource( 6 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 65
+lifetime = 110
+
+[editable path="Flip/Particles/fire_particles"]

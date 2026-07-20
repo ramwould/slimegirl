@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://theme.tres" type="Theme" id=1]
+[ext_resource path="res://ui/XYPlot/XYPlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://slimegirl/ramwould/UI/UIScripts/Retail_UI.gd" type="Script" id=3]
+[ext_resource path="res://ui/ActionSelector/ActionUIData/ActionUIDataCheckButton.gd" type="Script" id=4]
+
+[node name="ActionUIData" type="VBoxContainer"]
+mouse_filter = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="Direction" parent="." instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+min_length = 0.3
+default_value = Vector2( 1, 0 )
+snap = false
+
+[node name="DetachOption" type="CheckButton" parent="."]
+unique_name_in_owner = true
+modulate = Color( 0.956863, 0.623529, 1, 1 )
+margin_top = 67.0
+margin_right = 60.0
+margin_bottom = 79.0
+hint_tooltip = "Extends the lifetime,, at the cost of 1 super and loss of control of lassail"
+text = "Detach"
+align = 1
+script = ExtResource( 4 )

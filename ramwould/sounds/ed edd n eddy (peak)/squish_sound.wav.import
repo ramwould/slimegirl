@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/squish_sound.wav-606c6a833617ae5d9e9d9e3948060d15.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/ed edd n eddy (peak)/squish_sound.wav"
+dest_files=[ "res://.import/squish_sound.wav-606c6a833617ae5d9e9d9e3948060d15.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

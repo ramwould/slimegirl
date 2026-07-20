@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Spike Death.wav-4ec48ccf2a3c5119fc9ac69e2af59802.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/&knuckles/Spike Death.wav"
+dest_files=[ "res://.import/Spike Death.wav-4ec48ccf2a3c5119fc9ac69e2af59802.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

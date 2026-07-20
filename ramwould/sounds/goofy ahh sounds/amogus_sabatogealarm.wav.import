@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/amogus_sabatogealarm.wav-32759a44038a5cf17d4959448c56ce9c.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/amogus_sabatogealarm.wav"
+dest_files=[ "res://.import/amogus_sabatogealarm.wav-32759a44038a5cf17d4959448c56ce9c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

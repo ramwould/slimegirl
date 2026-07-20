@@ -1,0 +1,124 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=1]
+[ext_resource path="res://slimegirl/ramwould/FX/VenomBusterFX.tscn" type="PackedScene" id=2]
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=3]
+[ext_resource path="res://mechanics/SweptHitbox.gd" type="Script" id=4]
+[ext_resource path="res://slimegirl/ramwould/projectiles/BasicBeam.gd" type="Script" id=5]
+[ext_resource path="res://slimegirl/ramwould/sounds/goofy ahh sounds/shock.wav" type="AudioStream" id=6]
+[ext_resource path="res://slimegirl/ramwould/sounds/goofy ahh sounds/shot.wav" type="AudioStream" id=7]
+[ext_resource path="res://framework/VariableSound2D.gd" type="Script" id=8]
+[ext_resource path="res://characters/robo/sound/lasersplosion.wav" type="AudioStream" id=9]
+[ext_resource path="res://slimegirl/ramwould/projectiles/Defaults/BasicBeamDefault.gd" type="Script" id=10]
+[ext_resource path="res://slimegirl/ramwould/projectiles/CopybunyExplosion.tscn" type="PackedScene" id=11]
+[ext_resource path="res://slimegirl/ramwould/sounds/charge_beam.wav" type="AudioStream" id=12]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "Default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=3]
+resource_local_to_scene = true
+shader = ExtResource( 1 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[node name="BasicBeam" instance=ExtResource( 3 )]
+script = ExtResource( 5 )
+has_projectile_parry_window = false
+deletes_other_projectiles = false
+movable = false
+apply_hitlag_when_hit_by_melee = false
+allow_host_hit_cancelling = true
+allow_projectile_to_damage_slimegirl = false
+slime_color_to_use = "ffffff"
+uses_melee_hitboxes = true
+affected_by_tailwhip_detect = false
+on_fire_explosion = ExtResource( 11 )
+on_fire_explosion_fx = null
+on_fire_hit_cancel = false
+explosion_data = [  ]
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 2 )
+animation = "Default"
+
+[node name="BeamFX" parent="Flip/Particles" index="0" instance=ExtResource( 2 )]
+unique_name_in_owner = true
+material = SubResource( 3 )
+start_enabled = false
+
+[node name="boom" type="AudioStreamPlayer2D" parent="Sounds" index="0"]
+stream = ExtResource( 9 )
+volume_db = -9.0
+bus = "Fx"
+script = ExtResource( 8 )
+
+[node name="chargeup" type="AudioStreamPlayer2D" parent="Sounds" index="1"]
+stream = ExtResource( 12 )
+volume_db = -8.0
+pitch_scale = 1.1
+bus = "Fx"
+script = ExtResource( 8 )
+
+[node name="CollisionBox" parent="." index="2"]
+can_draw = false
+
+[node name="Hurtbox" parent="." index="3"]
+can_draw = false
+
+[node name="Default" parent="StateMachine" index="0"]
+script = ExtResource( 10 )
+__meta__ = {
+"_editor_description_": ""
+}
+move_x = 0
+clash = false
+num_hits = 9999999
+lifetime = 10
+fizzle_on_ground = false
+fizzle_on_walls = false
+
+[node name="SweptHitbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 4 )
+__meta__ = {
+"_editor_description_": ""
+}
+width = 18
+height = 18
+activated = false
+cancellable = false
+hits_otg = true
+can_clash = false
+parriable = false
+block_cancel_allowed = false
+screenshake_amount = 32
+screenshake_frames = 10
+camera_bump_dir = Vector2( 0, 1 )
+bump_on_whiff = true
+whiff_sound = ExtResource( 7 )
+hit_sound = ExtResource( 6 )
+whiff_sound_volume = -6.0
+hit_sound_volume = -3.0
+bass_on_whiff = true
+block_pushback_modifier = "0.0"
+pushback_x = "0.5"
+grounded_hit_state = "HurtAerial"
+knockdown_extends_hitstun = false
+disable_collision = false
+start_tick = 1
+active_ticks = 1

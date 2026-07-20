@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/goofy_tumble02.wav-9690518cdf0e2b6be89b7104fa5e7bfc.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/goofy_tumble02.wav"
+dest_files=[ "res://.import/goofy_tumble02.wav-9690518cdf0e2b6be89b7104fa5e7bfc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

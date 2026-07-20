@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/ActionSelector/ActionUIData/ActionUIData.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ui/XYPlot/XYPlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://slimegirl/ramwould/UI/UIScripts/XYPlot_NoFlip.gd" type="Script" id=3]
+[ext_resource path="res://ui/8Way/8Way.tscn" type="PackedScene" id=4]
+
+[node name="ActionUIData" instance=ExtResource( 1 )]
+custom_constants/separation = -4
+
+[node name="Position" parent="." index="0" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+script = ExtResource( 3 )
+update_facing = false
+min_length = 0.3
+default_value = Vector2( 1, 0 )
+snap_angles = 4
+snap_align_to_limit_center = false
+
+[node name="Influence" parent="." index="1" instance=ExtResource( 4 )]
+margin_left = 56.0
+margin_right = 106.0
+margin_bottom = 66.0
+NW = false
+NE = false
+SW = false
+SE = false

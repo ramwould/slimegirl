@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/boing3.wav-29975c3316afdcaa9e5b5f335a4163bd.sample"
+
+[deps]
+
+source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/boing3.wav"
+dest_files=[ "res://.import/boing3.wav-29975c3316afdcaa9e5b5f335a4163bd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

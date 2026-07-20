@@ -1,0 +1,155 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://projectile/BaseProjectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://slimegirl/ramwould/projectiles/sprites/slimeball_proj.png" type="Texture" id=2]
+[ext_resource path="res://slimegirl/ramwould/projectiles/Defaults/SlimeballDefault.gd" type="Script" id=3]
+[ext_resource path="res://mechanics/Hitbox.gd" type="Script" id=4]
+[ext_resource path="res://slimegirl/ramwould/projectiles/Slimeball.gd" type="Script" id=5]
+[ext_resource path="res://slimegirl/ramwould/sounds/minecraft/big_slime_01.wav" type="AudioStream" id=6]
+[ext_resource path="res://slimegirl/ramwould/sounds/pump_slime.wav" type="AudioStream" id=7]
+[ext_resource path="res://framework/VariableSound2D.gd" type="Script" id=8]
+[ext_resource path="res://characters/BaseChar.gdshader" type="Shader" id=9]
+[ext_resource path="res://slimegirl/ramwould/FX/SlimeProjTrailFX.tscn" type="PackedScene" id=10]
+[ext_resource path="res://slimegirl/ramwould/FX/ExplosionLite.tscn" type="PackedScene" id=11]
+[ext_resource path="res://slimegirl/ramwould/FX/ProjFireFX.tscn" type="PackedScene" id=12]
+[ext_resource path="res://slimegirl/ramwould/FX/ExplosionLiteFX.tscn" type="PackedScene" id=13]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "Default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=5]
+resource_local_to_scene = true
+shader = ExtResource( 9 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="ShaderMaterial" id=6]
+resource_local_to_scene = true
+shader = ExtResource( 9 )
+shader_param/use_extra_color_1 = false
+shader_param/use_extra_color_2 = false
+shader_param/extra_replace_color_1 = Color( 1, 0, 1, 1 )
+shader_param/extra_replace_color_2 = Color( 1, 0, 1, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
+shader_param/extra_color_1 = Color( 1, 1, 1, 1 )
+shader_param/extra_color_2 = Color( 1, 1, 1, 1 )
+shader_param/max_color_distance = 0.01
+shader_param/super_dim = false
+shader_param/use_outline = false
+shader_param/outline_color = Color( 0, 0, 0, 1 )
+
+[node name="Slimeball" instance=ExtResource( 1 )]
+script = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": "",
+"limb_data": {
+"Head": {
+},
+"LeftFoot": {
+},
+"LeftHand": {
+},
+"RightFoot": {
+},
+"RightHand": {
+}
+}
+}
+gravity = "0.33"
+air_friction = "0.18"
+extra_state_variables = "on_fire"
+hookable = true
+allow_host_hit_cancelling = false
+allow_projectile_to_damage_slimegirl = false
+slime_color_to_use = "style_2"
+uses_melee_hitboxes = false
+affected_by_tailwhip_detect = true
+on_fire_explosion = ExtResource( 11 )
+on_fire_explosion_fx = ExtResource( 13 )
+on_fire_hit_cancel = false
+explosion_data = [  ]
+
+[node name="Sprite" parent="Flip" index="0"]
+frames = SubResource( 4 )
+animation = "Default"
+offset = Vector2( 0, -7 )
+
+[node name="Trail" parent="Flip/Particles" index="0" instance=ExtResource( 10 )]
+unique_name_in_owner = true
+material = SubResource( 5 )
+
+[node name="FireTrail" parent="Flip/Particles" index="1" instance=ExtResource( 12 )]
+unique_name_in_owner = true
+material = SubResource( 6 )
+free = false
+one_shot = false
+
+[node name="SpawnTrail" type="AudioStreamPlayer2D" parent="Sounds" index="0"]
+stream = ExtResource( 6 )
+volume_db = -5.0
+bus = "Fx"
+script = ExtResource( 8 )
+
+[node name="CollisionBox" parent="." index="2"]
+width = 6
+height = 6
+
+[node name="Hurtbox" parent="." index="3"]
+width = 8
+height = 8
+
+[node name="Default" parent="StateMachine" index="0"]
+script = ExtResource( 3 )
+apply_forces = true
+apply_fric = true
+apply_grav = true
+apply_forces_no_limit = true
+move_x = 0
+lifetime = 160
+
+[node name="Hitbox" type="Node2D" parent="StateMachine/Default" index="0"]
+z_index = 1000
+script = ExtResource( 4 )
+width = 10
+height = 10
+damage = 40
+hitstun_ticks = 16
+hitlag_ticks = 5
+victim_hitlag = 5
+parry_meter_gain = 20
+plus_frames = 1
+screenshake_amount = 2
+hit_sound = ExtResource( 6 )
+hit_bass_sound = ExtResource( 7 )
+bass_sound_volume = -7.0
+knockback = "8.0"
+start_tick = 1
+always_on = true
+misc_data = "poison
+projectile_poison"
