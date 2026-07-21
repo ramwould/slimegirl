@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/hit_bonk.wav-56ce989f234b001eb233b4a2d69d0cfa.sample"
+path="res://.import/hit_bonk.wav-582ffeb3fafe4b7267133c6fbbbbbcec.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/hit_bonk.wav"
-dest_files=[ "res://.import/hit_bonk.wav-56ce989f234b001eb233b4a2d69d0cfa.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/hit_bonk.wav"
+dest_files=[ "res://.import/hit_bonk.wav-582ffeb3fafe4b7267133c6fbbbbbcec.sample" ]
 
 [params]
 

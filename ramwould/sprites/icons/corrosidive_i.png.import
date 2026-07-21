@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/corrosidive_i.png-b8b534508b445c550a048f0f056816c1.stex"
+path="res://.import/corrosidive_i.png-bb76b95c5c257a1060ba4b090949b1c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/corrosidive_i.png"
-dest_files=[ "res://.import/corrosidive_i.png-b8b534508b445c550a048f0f056816c1.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/corrosidive_i.png"
+dest_files=[ "res://.import/corrosidive_i.png-bb76b95c5c257a1060ba4b090949b1c4.stex" ]
 
 [params]
 

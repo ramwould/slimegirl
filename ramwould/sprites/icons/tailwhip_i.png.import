@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tailwhip_i.png-840be300e0eeb5b1510d35a468c54380.stex"
+path="res://.import/tailwhip_i.png-bd387a503c85ef52970994d31b1358f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/tailwhip_i.png"
-dest_files=[ "res://.import/tailwhip_i.png-840be300e0eeb5b1510d35a468c54380.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/tailwhip_i.png"
+dest_files=[ "res://.import/tailwhip_i.png-bd387a503c85ef52970994d31b1358f8.stex" ]
 
 [params]
 

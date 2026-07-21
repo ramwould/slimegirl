@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lethalriser_i.png-5bfea568d2e28930c9d6d9631f3197f3.stex"
+path="res://.import/lethalriser_i.png-fa3b72d7692c43192fbfdf99a410a869.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/lethalriser_i.png"
-dest_files=[ "res://.import/lethalriser_i.png-5bfea568d2e28930c9d6d9631f3197f3.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/lethalriser_i.png"
+dest_files=[ "res://.import/lethalriser_i.png-fa3b72d7692c43192fbfdf99a410a869.stex" ]
 
 [params]
 

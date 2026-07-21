@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/venobuster_new4.png-d5c9ad20a9049b271838220b3a1d7577.stex"
+path="res://.import/venobuster_new4.png-076497fdf05e548f2326a78a55c6feab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/venobuster/venobuster_new4.png"
-dest_files=[ "res://.import/venobuster_new4.png-d5c9ad20a9049b271838220b3a1d7577.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/venobuster/venobuster_new4.png"
+dest_files=[ "res://.import/venobuster_new4.png-076497fdf05e548f2326a78a55c6feab.stex" ]
 
 [params]
 

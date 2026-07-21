@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SSB64_sound_go.wav-002f0a50b83f67013bb5d6abe26bccc8.sample"
+path="res://.import/SSB64_sound_go.wav-f028e7dd21a97747ca8dcdd051b66933.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/ssb64/SSB64_sound_go.wav"
-dest_files=[ "res://.import/SSB64_sound_go.wav-002f0a50b83f67013bb5d6abe26bccc8.sample" ]
+source_file="res://slimegirl/ramwould/sounds/ssb64/SSB64_sound_go.wav"
+dest_files=[ "res://.import/SSB64_sound_go.wav-f028e7dd21a97747ca8dcdd051b66933.sample" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/confetti.png-c557bff4848d9327d5e3f25c79e34508.stex"
+path="res://.import/confetti.png-e1b106d89573d29eebb4ff3121f304fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/confetti.png"
-dest_files=[ "res://.import/confetti.png-c557bff4848d9327d5e3f25c79e34508.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/confetti.png"
+dest_files=[ "res://.import/confetti.png-e1b106d89573d29eebb4ff3121f304fd.stex" ]
 
 [params]
 

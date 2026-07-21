@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sharpeardo2.png-aa22d6738c8ede54f4022c4226805e2b.stex"
+path="res://.import/sharpeardo2.png-1176394e2be385ed144391de9f5059ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/sharpeardo/sharpeardo2.png"
-dest_files=[ "res://.import/sharpeardo2.png-aa22d6738c8ede54f4022c4226805e2b.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/sharpeardo/sharpeardo2.png"
+dest_files=[ "res://.import/sharpeardo2.png-1176394e2be385ed144391de9f5059ac.stex" ]
 
 [params]
 

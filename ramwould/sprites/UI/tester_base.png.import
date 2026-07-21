@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tester_base.png-6931e6490d7bb8efcf033d901e9d6c46.stex"
+path="res://.import/tester_base.png-98b1289fa32b220e9b23ceb21f8db245.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/UI/tester_base.png"
-dest_files=[ "res://.import/tester_base.png-6931e6490d7bb8efcf033d901e9d6c46.stex" ]
+source_file="res://slimegirl/ramwould/sprites/UI/tester_base.png"
+dest_files=[ "res://.import/tester_base.png-98b1289fa32b220e9b23ceb21f8db245.stex" ]
 
 [params]
 

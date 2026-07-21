@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Death.wav-6b061710be7370b9eb5e4fad1b7aa269.sample"
+path="res://.import/Death.wav-3345e55383a2577614afdb9e743d0ea8.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Death.wav"
-dest_files=[ "res://.import/Death.wav-6b061710be7370b9eb5e4fad1b7aa269.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Death.wav"
+dest_files=[ "res://.import/Death.wav-3345e55383a2577614afdb9e743d0ea8.sample" ]
 
 [params]
 

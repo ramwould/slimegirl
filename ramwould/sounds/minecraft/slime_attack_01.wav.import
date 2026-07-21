@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/slime_attack_01.wav-03b4765c984a097e31373d482feda092.sample"
+path="res://.import/slime_attack_01.wav-b9d3b42357026ebb70f7e8238c00e70a.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/minecraft/slime_attack_01.wav"
-dest_files=[ "res://.import/slime_attack_01.wav-03b4765c984a097e31373d482feda092.sample" ]
+source_file="res://slimegirl/ramwould/sounds/minecraft/slime_attack_01.wav"
+dest_files=[ "res://.import/slime_attack_01.wav-b9d3b42357026ebb70f7e8238c00e70a.sample" ]
 
 [params]
 

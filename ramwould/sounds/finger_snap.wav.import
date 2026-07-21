@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/finger_snap.wav-112368aaa95c5f5ef0bba86668c4a8da.sample"
+path="res://.import/finger_snap.wav-ba77b1eb218bebf0aba1c274eb78369d.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/finger_snap.wav"
-dest_files=[ "res://.import/finger_snap.wav-112368aaa95c5f5ef0bba86668c4a8da.sample" ]
+source_file="res://slimegirl/ramwould/sounds/finger_snap.wav"
+dest_files=[ "res://.import/finger_snap.wav-ba77b1eb218bebf0aba1c274eb78369d.sample" ]
 
 [params]
 

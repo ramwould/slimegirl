@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/combo_starter3.png-fd5d1eaf90269ce0baffd2054e085a49.stex"
+path="res://.import/combo_starter3.png-7276fd57e1cac638047f742e8b2e4d13.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/combo_starter/combo_starter3.png"
-dest_files=[ "res://.import/combo_starter3.png-fd5d1eaf90269ce0baffd2054e085a49.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/combo_starter/combo_starter3.png"
+dest_files=[ "res://.import/combo_starter3.png-7276fd57e1cac638047f742e8b2e4d13.stex" ]
 
 [params]
 

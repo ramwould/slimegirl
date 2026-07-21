@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/intro_super_bunbun_fighter_zed27.png-793562dab6b5257ca94ac65399353fea.stex"
+path="res://.import/intro_super_bunbun_fighter_zed27.png-81c0353ccca5b10f0851434cb4e1f59f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/intros/bunbun/intro_super_bunbun_fighter_zed27.png"
-dest_files=[ "res://.import/intro_super_bunbun_fighter_zed27.png-793562dab6b5257ca94ac65399353fea.stex" ]
+source_file="res://slimegirl/ramwould/sprites/intros/bunbun/intro_super_bunbun_fighter_zed27.png"
+dest_files=[ "res://.import/intro_super_bunbun_fighter_zed27.png-81c0353ccca5b10f0851434cb4e1f59f.stex" ]
 
 [params]
 

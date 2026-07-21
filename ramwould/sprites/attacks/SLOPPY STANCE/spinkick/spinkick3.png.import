@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spinkick3.png-61328a91a07ef7f9659f703697d9454b.stex"
+path="res://.import/spinkick3.png-fe31ab499b5363883ddcedcf7c337e76.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/spinkick/spinkick3.png"
-dest_files=[ "res://.import/spinkick3.png-61328a91a07ef7f9659f703697d9454b.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/spinkick/spinkick3.png"
+dest_files=[ "res://.import/spinkick3.png-fe31ab499b5363883ddcedcf7c337e76.stex" ]
 
 [params]
 

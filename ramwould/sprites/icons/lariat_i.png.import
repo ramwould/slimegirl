@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lariat_i.png-91b8acd29b510b676e694ef090a92509.stex"
+path="res://.import/lariat_i.png-07c57b34074aaf6746972e239b2b558b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/lariat_i.png"
-dest_files=[ "res://.import/lariat_i.png-91b8acd29b510b676e694ef090a92509.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/lariat_i.png"
+dest_files=[ "res://.import/lariat_i.png-07c57b34074aaf6746972e239b2b558b.stex" ]
 
 [params]
 

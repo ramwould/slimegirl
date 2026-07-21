@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/venocache.png-1c1f406e417c9010b1713d050cbac52c.stex"
+path="res://.import/venocache.png-1cc7d6589459548cb5dc3c57eaf134b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/venocache.png"
-dest_files=[ "res://.import/venocache.png-1c1f406e417c9010b1713d050cbac52c.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/venocache.png"
+dest_files=[ "res://.import/venocache.png-1cc7d6589459548cb5dc3c57eaf134b1.stex" ]
 
 [params]
 

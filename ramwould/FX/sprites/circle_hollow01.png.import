@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/circle_hollow01.png-914977666c987c8924215becf820407f.stex"
+path="res://.import/circle_hollow01.png-f609be34d78aa95bc547aebe5c1da25f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/circle_hollow01.png"
-dest_files=[ "res://.import/circle_hollow01.png-914977666c987c8924215becf820407f.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/circle_hollow01.png"
+dest_files=[ "res://.import/circle_hollow01.png-f609be34d78aa95bc547aebe5c1da25f.stex" ]
 
 [params]
 

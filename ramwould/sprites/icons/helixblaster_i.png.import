@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/helixblaster_i.png-f25b4406cce6d9a705c960a521f65054.stex"
+path="res://.import/helixblaster_i.png-c2874a3a1544de653b779dfb5fdcb87d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/helixblaster_i.png"
-dest_files=[ "res://.import/helixblaster_i.png-f25b4406cce6d9a705c960a521f65054.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/helixblaster_i.png"
+dest_files=[ "res://.import/helixblaster_i.png-c2874a3a1544de653b779dfb5fdcb87d.stex" ]
 
 [params]
 

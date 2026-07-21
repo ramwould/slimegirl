@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/countdown_go.png-360356625295dd0e54c318988fffba18.stex"
+path="res://.import/countdown_go.png-487faa8ebadca338122e1a18c0172e30.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/countdown_go.png"
-dest_files=[ "res://.import/countdown_go.png-360356625295dd0e54c318988fffba18.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/countdown_go.png"
+dest_files=[ "res://.import/countdown_go.png-487faa8ebadca338122e1a18c0172e30.stex" ]
 
 [params]
 

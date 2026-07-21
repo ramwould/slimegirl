@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/squish_sound.wav-606c6a833617ae5d9e9d9e3948060d15.sample"
+path="res://.import/squish_sound.wav-03c9d4c5d4d51ed43fc7e6bc3a0955b8.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/ed edd n eddy (peak)/squish_sound.wav"
-dest_files=[ "res://.import/squish_sound.wav-606c6a833617ae5d9e9d9e3948060d15.sample" ]
+source_file="res://slimegirl/ramwould/sounds/ed edd n eddy (peak)/squish_sound.wav"
+dest_files=[ "res://.import/squish_sound.wav-03c9d4c5d4d51ed43fc7e6bc3a0955b8.sample" ]
 
 [params]
 

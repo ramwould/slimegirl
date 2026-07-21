@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/copybuny.wav-25b65e07b66d47fc4488350e2ddd7c1c.sample"
+path="res://.import/copybuny.wav-1088414eaf6961af4b3ded04c39e3572.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/copybuny.wav"
-dest_files=[ "res://.import/copybuny.wav-25b65e07b66d47fc4488350e2ddd7c1c.sample" ]
+source_file="res://slimegirl/ramwould/sounds/copybuny.wav"
+dest_files=[ "res://.import/copybuny.wav-1088414eaf6961af4b3ded04c39e3572.sample" ]
 
 [params]
 

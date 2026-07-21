@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/meltdown_i.png-88a670b3cb514cf76eb93f1ac82894ef.stex"
+path="res://.import/meltdown_i.png-317f449340ed17dc73c0a0b0f010a937.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/meltdown_i.png"
-dest_files=[ "res://.import/meltdown_i.png-88a670b3cb514cf76eb93f1ac82894ef.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/meltdown_i.png"
+dest_files=[ "res://.import/meltdown_i.png-317f449340ed17dc73c0a0b0f010a937.stex" ]
 
 [params]
 

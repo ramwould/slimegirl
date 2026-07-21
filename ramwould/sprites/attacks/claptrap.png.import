@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/claptrap.png-db384dcdd2d5f2700b3fa9e34c5112a6.stex"
+path="res://.import/claptrap.png-501d56411501e574eb37f846872bcbbe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/claptrap.png"
-dest_files=[ "res://.import/claptrap.png-db384dcdd2d5f2700b3fa9e34c5112a6.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/claptrap.png"
+dest_files=[ "res://.import/claptrap.png-501d56411501e574eb37f846872bcbbe.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/codex_portrait_girl.png-da26c85d2e0783e84bac26e2977d454b.stex"
+path="res://.import/codex_portrait_girl.png-c2074311af972e49e096bf442b452f4a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/codex_stuff/codex_portrait_girl.png"
-dest_files=[ "res://.import/codex_portrait_girl.png-da26c85d2e0783e84bac26e2977d454b.stex" ]
+source_file="res://slimegirl/ramwould/codex_stuff/codex_portrait_girl.png"
+dest_files=[ "res://.import/codex_portrait_girl.png-c2074311af972e49e096bf442b452f4a.stex" ]
 
 [params]
 

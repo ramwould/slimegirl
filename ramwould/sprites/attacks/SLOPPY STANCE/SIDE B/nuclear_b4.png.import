@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nuclear_b4.png-16e80d1886142b95d62c5b753c21f8bd.stex"
+path="res://.import/nuclear_b4.png-ae2153a7c417b7408f4f94713ebdb5ce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/SIDE B/nuclear_b4.png"
-dest_files=[ "res://.import/nuclear_b4.png-16e80d1886142b95d62c5b753c21f8bd.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/SIDE B/nuclear_b4.png"
+dest_files=[ "res://.import/nuclear_b4.png-ae2153a7c417b7408f4f94713ebdb5ce.stex" ]
 
 [params]
 

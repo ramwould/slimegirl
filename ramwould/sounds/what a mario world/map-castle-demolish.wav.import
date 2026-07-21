@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/map-castle-demolish.wav-63679b2554aa94da2b43c6fa0be12371.sample"
+path="res://.import/map-castle-demolish.wav-465515d71ee0fcdc995531c127f5b36e.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/map-castle-demolish.wav"
-dest_files=[ "res://.import/map-castle-demolish.wav-63679b2554aa94da2b43c6fa0be12371.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/map-castle-demolish.wav"
+dest_files=[ "res://.import/map-castle-demolish.wav-465515d71ee0fcdc995531c127f5b36e.sample" ]
 
 [params]
 

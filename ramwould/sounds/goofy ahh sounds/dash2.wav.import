@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/dash2.wav-2e7466fd7ba93b451f551c25386ed088.sample"
+path="res://.import/dash2.wav-3ce08d370d5b0b2bc702625b3205421f.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/dash2.wav"
-dest_files=[ "res://.import/dash2.wav-2e7466fd7ba93b451f551c25386ed088.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/dash2.wav"
+dest_files=[ "res://.import/dash2.wav-3ce08d370d5b0b2bc702625b3205421f.sample" ]
 
 [params]
 

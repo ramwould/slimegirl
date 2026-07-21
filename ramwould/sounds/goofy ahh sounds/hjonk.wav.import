@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/hjonk.wav-924c52b6846e39607254d3430dbe0f1d.sample"
+path="res://.import/hjonk.wav-7043e59b81a333c0a23bd70f9da2905b.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/hjonk.wav"
-dest_files=[ "res://.import/hjonk.wav-924c52b6846e39607254d3430dbe0f1d.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/hjonk.wav"
+dest_files=[ "res://.import/hjonk.wav-7043e59b81a333c0a23bd70f9da2905b.sample" ]
 
 [params]
 

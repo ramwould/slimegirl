@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/meter_outline_style_2.png-f1b84ff44bc7a26ad1a50f8e08260a13.stex"
+path="res://.import/meter_outline_style_2.png-65e840d1bbd9becb65358883a27de6a9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/UI/the better bar/meter_outline_style_2.png"
-dest_files=[ "res://.import/meter_outline_style_2.png-f1b84ff44bc7a26ad1a50f8e08260a13.stex" ]
+source_file="res://slimegirl/ramwould/sprites/UI/the better bar/meter_outline_style_2.png"
+dest_files=[ "res://.import/meter_outline_style_2.png-65e840d1bbd9becb65358883a27de6a9.stex" ]
 
 [params]
 

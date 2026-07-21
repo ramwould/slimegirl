@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/twicetwice3.png-d10dff1be9a8cb2416029b3e1bf2df4e.stex"
+path="res://.import/twicetwice3.png-45b6c58c52680969340aeee6912e4156.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/twicetwice/twicetwice3.png"
-dest_files=[ "res://.import/twicetwice3.png-d10dff1be9a8cb2416029b3e1bf2df4e.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/twicetwice/twicetwice3.png"
+dest_files=[ "res://.import/twicetwice3.png-45b6c58c52680969340aeee6912e4156.stex" ]
 
 [params]
 

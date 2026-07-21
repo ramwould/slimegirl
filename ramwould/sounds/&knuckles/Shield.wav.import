@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Shield.wav-67ec4e2e2a95c634eae7ae7b3618bfd9.sample"
+path="res://.import/Shield.wav-33a1c81739147af01310bc31410466b2.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Shield.wav"
-dest_files=[ "res://.import/Shield.wav-67ec4e2e2a95c634eae7ae7b3618bfd9.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Shield.wav"
+dest_files=[ "res://.import/Shield.wav-33a1c81739147af01310bc31410466b2.sample" ]
 
 [params]
 

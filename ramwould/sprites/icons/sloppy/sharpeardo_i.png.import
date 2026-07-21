@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sharpeardo_i.png-005bfcebd03de48604359833601b971a.stex"
+path="res://.import/sharpeardo_i.png-bf62baa9dacb054140f286d7c7c9ccf2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/sharpeardo_i.png"
-dest_files=[ "res://.import/sharpeardo_i.png-005bfcebd03de48604359833601b971a.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/sharpeardo_i.png"
+dest_files=[ "res://.import/sharpeardo_i.png-bf62baa9dacb054140f286d7c7c9ccf2.stex" ]
 
 [params]
 

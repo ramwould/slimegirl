@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/uppakut_i.png-f71049ef5df12b5de47ce9a658288050.stex"
+path="res://.import/uppakut_i.png-4d70c1324cd6877668df16df4babd370.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/uppakut_i.png"
-dest_files=[ "res://.import/uppakut_i.png-f71049ef5df12b5de47ce9a658288050.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/uppakut_i.png"
+dest_files=[ "res://.import/uppakut_i.png-4d70c1324cd6877668df16df4babd370.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/achive_unlocked.png-d1604b9d3cf0d9a6f18c30758768a0d0.stex"
+path="res://.import/achive_unlocked.png-0d1405824e61ef5e926b75d8901a1858.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/achivements/achive_unlocked.png"
-dest_files=[ "res://.import/achive_unlocked.png-d1604b9d3cf0d9a6f18c30758768a0d0.stex" ]
+source_file="res://slimegirl/ramwould/sprites/achivements/achive_unlocked.png"
+dest_files=[ "res://.import/achive_unlocked.png-0d1405824e61ef5e926b75d8901a1858.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/impale.png-7b7a53cba7153e76af2188368e105161.stex"
+path="res://.import/impale.png-707c5f70c8eae4a6ed58edcf3466f839.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/impale.png"
-dest_files=[ "res://.import/impale.png-7b7a53cba7153e76af2188368e105161.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/impale.png"
+dest_files=[ "res://.import/impale.png-707c5f70c8eae4a6ed58edcf3466f839.stex" ]
 
 [params]
 

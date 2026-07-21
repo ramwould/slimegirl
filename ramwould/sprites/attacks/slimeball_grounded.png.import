@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slimeball_grounded.png-85f65e27fe464c4e3e6437480d6ce58a.stex"
+path="res://.import/slimeball_grounded.png-42811da7491e447ff5765b7dccf13e61.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/slimeball_grounded.png"
-dest_files=[ "res://.import/slimeball_grounded.png-85f65e27fe464c4e3e6437480d6ce58a.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/slimeball_grounded.png"
+dest_files=[ "res://.import/slimeball_grounded.png-42811da7491e447ff5765b7dccf13e61.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/guncock.wav-e7e0c6e2a2882de793b70991d2e36551.sample"
+path="res://.import/guncock.wav-7a6d809409b4fda6ca7a1a897a9a5c2c.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/ed edd n eddy (peak)/guncock.wav"
-dest_files=[ "res://.import/guncock.wav-e7e0c6e2a2882de793b70991d2e36551.sample" ]
+source_file="res://slimegirl/ramwould/sounds/ed edd n eddy (peak)/guncock.wav"
+dest_files=[ "res://.import/guncock.wav-7a6d809409b4fda6ca7a1a897a9a5c2c.sample" ]
 
 [params]
 

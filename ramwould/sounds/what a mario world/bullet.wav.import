@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/bullet.wav-70b34bb2b8ee643b8c47b17dfd2939d8.sample"
+path="res://.import/bullet.wav-12e1294f61fc796e77766bb1a2e5fa74.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/bullet.wav"
-dest_files=[ "res://.import/bullet.wav-70b34bb2b8ee643b8c47b17dfd2939d8.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/bullet.wav"
+dest_files=[ "res://.import/bullet.wav-12e1294f61fc796e77766bb1a2e5fa74.sample" ]
 
 [params]
 

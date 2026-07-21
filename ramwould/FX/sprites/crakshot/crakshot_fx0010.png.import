@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/crakshot_fx0010.png-63369c99b618ac2d4ffdd1a889860168.stex"
+path="res://.import/crakshot_fx0010.png-08a50705c5f4285ce4277d7ef1fc5b67.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/crakshot/crakshot_fx0010.png"
-dest_files=[ "res://.import/crakshot_fx0010.png-63369c99b618ac2d4ffdd1a889860168.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/crakshot/crakshot_fx0010.png"
+dest_files=[ "res://.import/crakshot_fx0010.png-08a50705c5f4285ce4277d7ef1fc5b67.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/playball.wav-e6685d02ab012c8e6569efb68d09b6d0.sample"
+path="res://.import/playball.wav-dc70e705ec32851fc28bfe6525d229bb.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/playball.wav"
-dest_files=[ "res://.import/playball.wav-e6685d02ab012c8e6569efb68d09b6d0.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/playball.wav"
+dest_files=[ "res://.import/playball.wav-dc70e705ec32851fc28bfe6525d229bb.sample" ]
 
 [params]
 

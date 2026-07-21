@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jackoslide_i.png-3fd5293e5e59411a737e82df9556491e.stex"
+path="res://.import/jackoslide_i.png-05fe84817009fe94e23e468e1080e5e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/jackoslide_i.png"
-dest_files=[ "res://.import/jackoslide_i.png-3fd5293e5e59411a737e82df9556491e.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/jackoslide_i.png"
+dest_files=[ "res://.import/jackoslide_i.png-05fe84817009fe94e23e468e1080e5e7.stex" ]
 
 [params]
 

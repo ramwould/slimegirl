@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/stab.wav-4315877e48c2696ac276d242aeb8fcc8.sample"
+path="res://.import/stab.wav-c6006969f9978c164adf05fda0a3ff18.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/stab.wav"
-dest_files=[ "res://.import/stab.wav-4315877e48c2696ac276d242aeb8fcc8.sample" ]
+source_file="res://slimegirl/ramwould/sounds/stab.wav"
+dest_files=[ "res://.import/stab.wav-c6006969f9978c164adf05fda0a3ff18.sample" ]
 
 [params]
 

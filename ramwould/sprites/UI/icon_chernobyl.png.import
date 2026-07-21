@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon_chernobyl.png-5da6bb3c1215cb716c05129c2ea16b64.stex"
+path="res://.import/icon_chernobyl.png-54b461a6ed697f329780fcc80488cb53.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/UI/icon_chernobyl.png"
-dest_files=[ "res://.import/icon_chernobyl.png-5da6bb3c1215cb716c05129c2ea16b64.stex" ]
+source_file="res://slimegirl/ramwould/sprites/UI/icon_chernobyl.png"
+dest_files=[ "res://.import/icon_chernobyl.png-54b461a6ed697f329780fcc80488cb53.stex" ]
 
 [params]
 

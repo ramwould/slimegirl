@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slapthesequal3.png-c4fd093cf2ebf4c61931b641f7371bee.stex"
+path="res://.import/slapthesequal3.png-1581107c5c09acb3ddeaafabaa12c87b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/slap again/slapthesequal3.png"
-dest_files=[ "res://.import/slapthesequal3.png-c4fd093cf2ebf4c61931b641f7371bee.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/slap again/slapthesequal3.png"
+dest_files=[ "res://.import/slapthesequal3.png-1581107c5c09acb3ddeaafabaa12c87b.stex" ]
 
 [params]
 

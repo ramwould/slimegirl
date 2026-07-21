@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Super Sonic Transform.wav-acc4715ce83c401908e2d9c67bf579a3.sample"
+path="res://.import/Super Sonic Transform.wav-ae9151706319f13766d99684348e4b53.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Super Sonic Transform.wav"
-dest_files=[ "res://.import/Super Sonic Transform.wav-acc4715ce83c401908e2d9c67bf579a3.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Super Sonic Transform.wav"
+dest_files=[ "res://.import/Super Sonic Transform.wav-ae9151706319f13766d99684348e4b53.sample" ]
 
 [params]
 

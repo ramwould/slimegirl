@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/hit_metal02.wav-5edfad31feaf3b1db975a1aad7b1fc2e.sample"
+path="res://.import/hit_metal02.wav-d3df06e261d1801b103a1e60f9a69fc7.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/hit_metal02.wav"
-dest_files=[ "res://.import/hit_metal02.wav-5edfad31feaf3b1db975a1aad7b1fc2e.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/hit_metal02.wav"
+dest_files=[ "res://.import/hit_metal02.wav-d3df06e261d1801b103a1e60f9a69fc7.sample" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/hit_boing.wav-c88a8e4f4fa5797c42c6347572684de0.sample"
+path="res://.import/hit_boing.wav-16f0b6728b6bebb11f6ced6abdca6be4.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/hit_boing.wav"
-dest_files=[ "res://.import/hit_boing.wav-c88a8e4f4fa5797c42c6347572684de0.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/hit_boing.wav"
+dest_files=[ "res://.import/hit_boing.wav-16f0b6728b6bebb11f6ced6abdca6be4.sample" ]
 
 [params]
 

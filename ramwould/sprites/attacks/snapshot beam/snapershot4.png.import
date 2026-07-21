@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snapershot4.png-d5167785878f7aac6e8465788fdd40ea.stex"
+path="res://.import/snapershot4.png-db6d447f8836cedce74e560f78c14d2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/snapshot beam/snapershot4.png"
-dest_files=[ "res://.import/snapershot4.png-d5167785878f7aac6e8465788fdd40ea.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/snapshot beam/snapershot4.png"
+dest_files=[ "res://.import/snapershot4.png-db6d447f8836cedce74e560f78c14d2e.stex" ]
 
 [params]
 

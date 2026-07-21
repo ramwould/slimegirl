@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/allears_i.png-c6f838053bbade91f7ada1f52bfd8494.stex"
+path="res://.import/allears_i.png-efe17960b5c2d0df4bdf3d985f404dcd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/allears_i.png"
-dest_files=[ "res://.import/allears_i.png-c6f838053bbade91f7ada1f52bfd8494.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/allears_i.png"
+dest_files=[ "res://.import/allears_i.png-efe17960b5c2d0df4bdf3d985f404dcd.stex" ]
 
 [params]
 

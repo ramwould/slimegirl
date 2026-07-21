@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/eene_whoop.wav-b0161e115fc5fc4b8d65d52926693d92.sample"
+path="res://.import/eene_whoop.wav-3fc0d56858a54288043451fda9634269.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/ed edd n eddy (peak)/eene_whoop.wav"
-dest_files=[ "res://.import/eene_whoop.wav-b0161e115fc5fc4b8d65d52926693d92.sample" ]
+source_file="res://slimegirl/ramwould/sounds/ed edd n eddy (peak)/eene_whoop.wav"
+dest_files=[ "res://.import/eene_whoop.wav-3fc0d56858a54288043451fda9634269.sample" ]
 
 [params]
 

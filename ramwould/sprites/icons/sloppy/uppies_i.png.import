@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/uppies_i.png-c52a5dca4c4f6605eb9fff0594ee7731.stex"
+path="res://.import/uppies_i.png-9fcf0704a3897c091d85a05f6a65aecf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/uppies_i.png"
-dest_files=[ "res://.import/uppies_i.png-c52a5dca4c4f6605eb9fff0594ee7731.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/uppies_i.png"
+dest_files=[ "res://.import/uppies_i.png-9fcf0704a3897c091d85a05f6a65aecf.stex" ]
 
 [params]
 

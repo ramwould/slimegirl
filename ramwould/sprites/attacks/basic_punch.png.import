@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/basic_punch.png-0c3855b3062dc1e43f5c0c1293ada69c.stex"
+path="res://.import/basic_punch.png-5cb1c673a7d09ca77d9597cbdf471732.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/basic_punch.png"
-dest_files=[ "res://.import/basic_punch.png-0c3855b3062dc1e43f5c0c1293ada69c.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/basic_punch.png"
+dest_files=[ "res://.import/basic_punch.png-5cb1c673a7d09ca77d9597cbdf471732.stex" ]
 
 [params]
 

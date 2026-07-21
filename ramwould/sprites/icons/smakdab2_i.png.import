@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/smakdab2_i.png-99d2895fa9942a42f551da68ae833468.stex"
+path="res://.import/smakdab2_i.png-7b7a5e396def8e840a5e0447ff8fc271.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/smakdab2_i.png"
-dest_files=[ "res://.import/smakdab2_i.png-99d2895fa9942a42f551da68ae833468.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/smakdab2_i.png"
+dest_files=[ "res://.import/smakdab2_i.png-7b7a5e396def8e840a5e0447ff8fc271.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/super-stomp.wav-d1ac9577e64ea1041f57ed12158cb3c7.sample"
+path="res://.import/super-stomp.wav-e119caae19dd6045e7a2daa8e3e7289b.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/super-stomp.wav"
-dest_files=[ "res://.import/super-stomp.wav-d1ac9577e64ea1041f57ed12158cb3c7.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/super-stomp.wav"
+dest_files=[ "res://.import/super-stomp.wav-e119caae19dd6045e7a2daa8e3e7289b.sample" ]
 
 [params]
 

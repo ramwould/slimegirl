@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/aerdash3.png-802b64305bdc12c6705eb020c2940a2a.stex"
+path="res://.import/aerdash3.png-d70e7c8aa5b5e9c6f065a78d3c36fe1d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/movement/aerdash3.png"
-dest_files=[ "res://.import/aerdash3.png-802b64305bdc12c6705eb020c2940a2a.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/movement/aerdash3.png"
+dest_files=[ "res://.import/aerdash3.png-d70e7c8aa5b5e9c6f065a78d3c36fe1d.stex" ]
 
 [params]
 

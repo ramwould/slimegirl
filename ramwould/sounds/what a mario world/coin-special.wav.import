@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/coin-special.wav-7af9ee0e9c5a8c1326c5d8ed2683c8c6.sample"
+path="res://.import/coin-special.wav-ca528ef91361863f61c5dc35fe678915.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/coin-special.wav"
-dest_files=[ "res://.import/coin-special.wav-7af9ee0e9c5a8c1326c5d8ed2683c8c6.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/coin-special.wav"
+dest_files=[ "res://.import/coin-special.wav-ca528ef91361863f61c5dc35fe678915.sample" ]
 
 [params]
 

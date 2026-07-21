@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/overbonk7.png-3d2e3026626b0faad552d5d04509e1c4.stex"
+path="res://.import/overbonk7.png-50dd4d8f11deb4b23a09475efcee95f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/overbonk/overbonk7.png"
-dest_files=[ "res://.import/overbonk7.png-3d2e3026626b0faad552d5d04509e1c4.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/overbonk/overbonk7.png"
+dest_files=[ "res://.import/overbonk7.png-50dd4d8f11deb4b23a09475efcee95f8.stex" ]
 
 [params]
 

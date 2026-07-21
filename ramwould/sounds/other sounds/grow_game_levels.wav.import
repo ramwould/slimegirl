@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/grow_game_levels.wav-dc056d73675dbd650b15e897e084d17c.sample"
+path="res://.import/grow_game_levels.wav-7a940245497535f0bd97399a71381508.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/other sounds/grow_game_levels.wav"
-dest_files=[ "res://.import/grow_game_levels.wav-dc056d73675dbd650b15e897e084d17c.sample" ]
+source_file="res://slimegirl/ramwould/sounds/other sounds/grow_game_levels.wav"
+dest_files=[ "res://.import/grow_game_levels.wav-7a940245497535f0bd97399a71381508.sample" ]
 
 [params]
 

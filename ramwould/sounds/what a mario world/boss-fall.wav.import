@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/boss-fall.wav-3fdc44e9d8f6f3822272453e3cdd833d.sample"
+path="res://.import/boss-fall.wav-e7010edd09a951a9ccd25ab2bbdec77b.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/boss-fall.wav"
-dest_files=[ "res://.import/boss-fall.wav-3fdc44e9d8f6f3822272453e3cdd833d.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/boss-fall.wav"
+dest_files=[ "res://.import/boss-fall.wav-e7010edd09a951a9ccd25ab2bbdec77b.sample" ]
 
 [params]
 

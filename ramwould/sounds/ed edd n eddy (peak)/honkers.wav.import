@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/honkers.wav-7a549fa11e3290806cdc6b96c6f2dcf5.sample"
+path="res://.import/honkers.wav-b84f2e9ca0833261d4bfae8dab87fbf4.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/ed edd n eddy (peak)/honkers.wav"
-dest_files=[ "res://.import/honkers.wav-7a549fa11e3290806cdc6b96c6f2dcf5.sample" ]
+source_file="res://slimegirl/ramwould/sounds/ed edd n eddy (peak)/honkers.wav"
+dest_files=[ "res://.import/honkers.wav-b84f2e9ca0833261d4bfae8dab87fbf4.sample" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/low_punch4.png-43419d4b3ac14ab1aeceb686e90f687b.stex"
+path="res://.import/low_punch4.png-3b0b9df6e2b4c851365b04fc428e483b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/low punch/low_punch4.png"
-dest_files=[ "res://.import/low_punch4.png-43419d4b3ac14ab1aeceb686e90f687b.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/low punch/low_punch4.png"
+dest_files=[ "res://.import/low_punch4.png-3b0b9df6e2b4c851365b04fc428e483b.stex" ]
 
 [params]
 

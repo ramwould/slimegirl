@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/earwhut3.png-c9e00f224440739fb60f1c4d99e6ff39.stex"
+path="res://.import/earwhut3.png-d20dbdc4714401cb653347d45d7ea4d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/earwhut/earwhut3.png"
-dest_files=[ "res://.import/earwhut3.png-c9e00f224440739fb60f1c4d99e6ff39.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/earwhut/earwhut3.png"
+dest_files=[ "res://.import/earwhut3.png-d20dbdc4714401cb653347d45d7ea4d6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon_snagtrik.png-f6c0bbc7c365faefc371dcbd742e6060.stex"
+path="res://.import/icon_snagtrik.png-6c510524a70d55d179df435157c74689.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/UI/icon_snagtrik.png"
-dest_files=[ "res://.import/icon_snagtrik.png-f6c0bbc7c365faefc371dcbd742e6060.stex" ]
+source_file="res://slimegirl/ramwould/sprites/UI/icon_snagtrik.png"
+dest_files=[ "res://.import/icon_snagtrik.png-6c510524a70d55d179df435157c74689.stex" ]
 
 [params]
 

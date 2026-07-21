@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sloppy_wait6.png-4e5e7ede2241b1d64bd211e903fc59b3.stex"
+path="res://.import/sloppy_wait6.png-e436847693d38398c4b9479a734637cc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/movement/sloppy_wait6.png"
-dest_files=[ "res://.import/sloppy_wait6.png-4e5e7ede2241b1d64bd211e903fc59b3.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/movement/sloppy_wait6.png"
+dest_files=[ "res://.import/sloppy_wait6.png-e436847693d38398c4b9479a734637cc.stex" ]
 
 [params]
 

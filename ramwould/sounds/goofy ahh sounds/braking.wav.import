@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/braking.wav-1fd39c1ad01f77d532bbb0baccfd4daa.sample"
+path="res://.import/braking.wav-5ceceab495ed5228c939657684840db8.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/braking.wav"
-dest_files=[ "res://.import/braking.wav-1fd39c1ad01f77d532bbb0baccfd4daa.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/braking.wav"
+dest_files=[ "res://.import/braking.wav-5ceceab495ed5228c939657684840db8.sample" ]
 
 [params]
 

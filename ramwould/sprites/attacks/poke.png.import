@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/poke.png-9b5e903ba86aea51ff28f18e3c97e868.stex"
+path="res://.import/poke.png-a53237604ce56c4fbdd13ca2e2a2294a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/poke.png"
-dest_files=[ "res://.import/poke.png-9b5e903ba86aea51ff28f18e3c97e868.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/poke.png"
+dest_files=[ "res://.import/poke.png-a53237604ce56c4fbdd13ca2e2a2294a.stex" ]
 
 [params]
 

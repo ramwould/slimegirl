@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/hit_bass.wav-0f017aed95e9046ee827442828f86145.sample"
+path="res://.import/hit_bass.wav-93b246f90163c707b7ce524c99e18bff.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/hit_bass.wav"
-dest_files=[ "res://.import/hit_bass.wav-0f017aed95e9046ee827442828f86145.sample" ]
+source_file="res://slimegirl/ramwould/sounds/hit_bass.wav"
+dest_files=[ "res://.import/hit_bass.wav-93b246f90163c707b7ce524c99e18bff.sample" ]
 
 [params]
 

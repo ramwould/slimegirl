@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/long_kick_alt5.png-23b432a2282e16e69a6d8940451ce677.stex"
+path="res://.import/long_kick_alt5.png-3b1c8ac404b0b2d95d88dff246c2176e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/longkick/long_kick_alt5.png"
-dest_files=[ "res://.import/long_kick_alt5.png-23b432a2282e16e69a6d8940451ce677.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/longkick/long_kick_alt5.png"
+dest_files=[ "res://.import/long_kick_alt5.png-3b1c8ac404b0b2d95d88dff246c2176e.stex" ]
 
 [params]
 

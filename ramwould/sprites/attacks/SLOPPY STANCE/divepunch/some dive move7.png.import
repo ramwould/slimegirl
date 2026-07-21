@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/some dive move7.png-e2e9e90bb724d846bb3d7107d2cfd1c3.stex"
+path="res://.import/some dive move7.png-cc535f86755b58ba248553f53304a6c5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/divepunch/some dive move7.png"
-dest_files=[ "res://.import/some dive move7.png-e2e9e90bb724d846bb3d7107d2cfd1c3.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/divepunch/some dive move7.png"
+dest_files=[ "res://.import/some dive move7.png-cc535f86755b58ba248553f53304a6c5.stex" ]
 
 [params]
 

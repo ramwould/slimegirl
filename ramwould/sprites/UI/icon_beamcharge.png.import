@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon_beamcharge.png-b222465ad4120463400a2626ae8c0eae.stex"
+path="res://.import/icon_beamcharge.png-333c1ac4964298c799bcaefa6b053ced.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/UI/icon_beamcharge.png"
-dest_files=[ "res://.import/icon_beamcharge.png-b222465ad4120463400a2626ae8c0eae.stex" ]
+source_file="res://slimegirl/ramwould/sprites/UI/icon_beamcharge.png"
+dest_files=[ "res://.import/icon_beamcharge.png-333c1ac4964298c799bcaefa6b053ced.stex" ]
 
 [params]
 

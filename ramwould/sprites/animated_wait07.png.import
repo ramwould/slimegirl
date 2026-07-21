@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/animated_wait07.png-326bcf49355bd1005c0e92f54cda68d5.stex"
+path="res://.import/animated_wait07.png-339ce00e0e6e82253468a81adae9733b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/animated_wait07.png"
-dest_files=[ "res://.import/animated_wait07.png-326bcf49355bd1005c0e92f54cda68d5.stex" ]
+source_file="res://slimegirl/ramwould/sprites/animated_wait07.png"
+dest_files=[ "res://.import/animated_wait07.png-339ce00e0e6e82253468a81adae9733b.stex" ]
 
 [params]
 

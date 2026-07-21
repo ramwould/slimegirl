@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/pluk_reverse.wav-5fb5f983568bd8a35f0719a4e41e632c.sample"
+path="res://.import/pluk_reverse.wav-0918614d2a4e9209f953594f6ff2403e.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/pluk_reverse.wav"
-dest_files=[ "res://.import/pluk_reverse.wav-5fb5f983568bd8a35f0719a4e41e632c.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/pluk_reverse.wav"
+dest_files=[ "res://.import/pluk_reverse.wav-0918614d2a4e9209f953594f6ff2403e.sample" ]
 
 [params]
 

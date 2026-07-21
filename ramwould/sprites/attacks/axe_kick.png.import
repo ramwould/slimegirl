@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/axe_kick.png-d7b1288f0b9a14a15370a3c7213454c3.stex"
+path="res://.import/axe_kick.png-4e63bf37203fbd1561701fdbf3a4e9d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/axe_kick.png"
-dest_files=[ "res://.import/axe_kick.png-d7b1288f0b9a14a15370a3c7213454c3.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/axe_kick.png"
+dest_files=[ "res://.import/axe_kick.png-4e63bf37203fbd1561701fdbf3a4e9d6.stex" ]
 
 [params]
 

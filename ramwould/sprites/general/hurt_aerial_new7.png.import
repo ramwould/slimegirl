@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hurt_aerial_new7.png-f5bd10955e5ee54f9389f128a5fe3e93.stex"
+path="res://.import/hurt_aerial_new7.png-9ff7754e43eabba421b1527f109665f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/general/hurt_aerial_new7.png"
-dest_files=[ "res://.import/hurt_aerial_new7.png-f5bd10955e5ee54f9389f128a5fe3e93.stex" ]
+source_file="res://slimegirl/ramwould/sprites/general/hurt_aerial_new7.png"
+dest_files=[ "res://.import/hurt_aerial_new7.png-9ff7754e43eabba421b1527f109665f1.stex" ]
 
 [params]
 

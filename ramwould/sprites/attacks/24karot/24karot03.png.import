@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/24karot03.png-4d090cc13b540d898d68af89dc9ebae4.stex"
+path="res://.import/24karot03.png-9d56e7f2a6c0caebd45ea0eb8f7544d0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/24karot/24karot03.png"
-dest_files=[ "res://.import/24karot03.png-4d090cc13b540d898d68af89dc9ebae4.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/24karot/24karot03.png"
+dest_files=[ "res://.import/24karot03.png-9d56e7f2a6c0caebd45ea0eb8f7544d0.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/pm_honk.wav-a8f276aae223b243c038aac90ffae8ed.sample"
+path="res://.import/pm_honk.wav-907571a3ebef8968a2f4c4bce0b0dac6.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/paper mario yes really/pm_honk.wav"
-dest_files=[ "res://.import/pm_honk.wav-a8f276aae223b243c038aac90ffae8ed.sample" ]
+source_file="res://slimegirl/ramwould/sounds/paper mario yes really/pm_honk.wav"
+dest_files=[ "res://.import/pm_honk.wav-907571a3ebef8968a2f4c4bce0b0dac6.sample" ]
 
 [params]
 

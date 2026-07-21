@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/knockdown_new7.png-c67f583245a2e48a346b6ff225b611eb.stex"
+path="res://.import/knockdown_new7.png-f4e4a04cccea1c246fcfed88f7be8e3a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/general/knockdown_new7.png"
-dest_files=[ "res://.import/knockdown_new7.png-c67f583245a2e48a346b6ff225b611eb.stex" ]
+source_file="res://slimegirl/ramwould/sprites/general/knockdown_new7.png"
+dest_files=[ "res://.import/knockdown_new7.png-f4e4a04cccea1c246fcfed88f7be8e3a.stex" ]
 
 [params]
 

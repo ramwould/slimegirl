@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/double_jump.png-17c89103b9abe54d30f974091a9e5044.stex"
+path="res://.import/double_jump.png-55c0ffce47e396cd5d53f0ff87f310df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/double_jump.png"
-dest_files=[ "res://.import/double_jump.png-17c89103b9abe54d30f974091a9e5044.stex" ]
+source_file="res://slimegirl/ramwould/sprites/double_jump.png"
+dest_files=[ "res://.import/double_jump.png-55c0ffce47e396cd5d53f0ff87f310df.stex" ]
 
 [params]
 

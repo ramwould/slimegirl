@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vs_eyebleedin'-nile19.png-dcaed8ae12ef98ffad1c314d85278e6d.stex"
+path="res://.import/vs_eyebleedin'-nile19.png-e10f0e649e16064dc98dcad5405f52aa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/intros/juvenile/vs_eyebleedin'-nile19.png"
-dest_files=[ "res://.import/vs_eyebleedin'-nile19.png-dcaed8ae12ef98ffad1c314d85278e6d.stex" ]
+source_file="res://slimegirl/ramwould/sprites/intros/juvenile/vs_eyebleedin'-nile19.png"
+dest_files=[ "res://.import/vs_eyebleedin'-nile19.png-e10f0e649e16064dc98dcad5405f52aa.stex" ]
 
 [params]
 

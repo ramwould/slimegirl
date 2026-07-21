@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slopdrop07.png-9f34a501ad8917ecd2cf472cbe14dbb6.stex"
+path="res://.import/slopdrop07.png-b55f07003110293479f5cd441e7a044b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/slopdrop reboing/slopdrop07.png"
-dest_files=[ "res://.import/slopdrop07.png-9f34a501ad8917ecd2cf472cbe14dbb6.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/slopdrop reboing/slopdrop07.png"
+dest_files=[ "res://.import/slopdrop07.png-b55f07003110293479f5cd441e7a044b.stex" ]
 
 [params]
 

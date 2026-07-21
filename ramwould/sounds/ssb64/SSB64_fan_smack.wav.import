@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/SSB64_fan_smack.wav-4e8b62c7a6fc53ed3668326f5fd74146.sample"
+path="res://.import/SSB64_fan_smack.wav-f444856b57e23e70246f815a81657bff.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/ssb64/SSB64_fan_smack.wav"
-dest_files=[ "res://.import/SSB64_fan_smack.wav-4e8b62c7a6fc53ed3668326f5fd74146.sample" ]
+source_file="res://slimegirl/ramwould/sounds/ssb64/SSB64_fan_smack.wav"
+dest_files=[ "res://.import/SSB64_fan_smack.wav-f444856b57e23e70246f815a81657bff.sample" ]
 
 [params]
 

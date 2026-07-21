@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/goodriderv2_7.png-6c2e726e9106d8e8550ef90e3a0532ce.stex"
+path="res://.import/goodriderv2_7.png-169a30b81219f68d162ba55ac46e2290.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/the real goodrider/goodriderv2_7.png"
-dest_files=[ "res://.import/goodriderv2_7.png-6c2e726e9106d8e8550ef90e3a0532ce.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/the real goodrider/goodriderv2_7.png"
+dest_files=[ "res://.import/goodriderv2_7.png-169a30b81219f68d162ba55ac46e2290.stex" ]
 
 [params]
 

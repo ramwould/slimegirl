@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/throw_aerial2.png-26569209636fd3b5ea97882e125354a6.stex"
+path="res://.import/throw_aerial2.png-b63f252684e026b40c406c60f87ff943.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/throw aerial/throw_aerial2.png"
-dest_files=[ "res://.import/throw_aerial2.png-26569209636fd3b5ea97882e125354a6.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/throw aerial/throw_aerial2.png"
+dest_files=[ "res://.import/throw_aerial2.png-b63f252684e026b40c406c60f87ff943.stex" ]
 
 [params]
 

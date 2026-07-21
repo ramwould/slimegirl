@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sloppy_fall.png-be1ae434d261f645609acae1423bd27c.stex"
+path="res://.import/sloppy_fall.png-e70efa7d3a6ed0b72733299a3f98b6b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/movement/sloppy_fall.png"
-dest_files=[ "res://.import/sloppy_fall.png-be1ae434d261f645609acae1423bd27c.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/movement/sloppy_fall.png"
+dest_files=[ "res://.import/sloppy_fall.png-e70efa7d3a6ed0b72733299a3f98b6b7.stex" ]
 
 [params]
 

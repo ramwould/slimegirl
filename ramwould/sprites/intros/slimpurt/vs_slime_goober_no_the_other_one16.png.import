@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vs_slime_goober_no_the_other_one16.png-ea803171ab8aeeaa4ac64942c9ee2450.stex"
+path="res://.import/vs_slime_goober_no_the_other_one16.png-ff1ee3f893dddc8463e34147a25644bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/intros/slimpurt/vs_slime_goober_no_the_other_one16.png"
-dest_files=[ "res://.import/vs_slime_goober_no_the_other_one16.png-ea803171ab8aeeaa4ac64942c9ee2450.stex" ]
+source_file="res://slimegirl/ramwould/sprites/intros/slimpurt/vs_slime_goober_no_the_other_one16.png"
+dest_files=[ "res://.import/vs_slime_goober_no_the_other_one16.png-ff1ee3f893dddc8463e34147a25644bf.stex" ]
 
 [params]
 

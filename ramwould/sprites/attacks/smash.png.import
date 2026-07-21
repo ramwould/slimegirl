@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/smash.png-847533e9e6b980e5c5102b7a84f7dae8.stex"
+path="res://.import/smash.png-7a69c003b5b88331a3cda5eb8a9aae7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/smash.png"
-dest_files=[ "res://.import/smash.png-847533e9e6b980e5c5102b7a84f7dae8.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/smash.png"
+dest_files=[ "res://.import/smash.png-7a69c003b5b88331a3cda5eb8a9aae7b.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Charging.wav-830799c39fd1f05c26e463dedb394310.sample"
+path="res://.import/Charging.wav-45b6cbf2d1c8fffe8edc730b520dc49f.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Charging.wav"
-dest_files=[ "res://.import/Charging.wav-830799c39fd1f05c26e463dedb394310.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Charging.wav"
+dest_files=[ "res://.import/Charging.wav-45b6cbf2d1c8fffe8edc730b520dc49f.sample" ]
 
 [params]
 

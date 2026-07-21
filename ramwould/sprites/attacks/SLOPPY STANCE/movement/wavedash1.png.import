@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wavedash1.png-b3f8b25a34be455e8240950d5fdcafab.stex"
+path="res://.import/wavedash1.png-344c90211ddbbb61404b2ad5b578a7c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/movement/wavedash1.png"
-dest_files=[ "res://.import/wavedash1.png-b3f8b25a34be455e8240950d5fdcafab.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/movement/wavedash1.png"
+dest_files=[ "res://.import/wavedash1.png-344c90211ddbbb61404b2ad5b578a7c4.stex" ]
 
 [params]
 

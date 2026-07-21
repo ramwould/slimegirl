@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gutschek4.png-b80eee29f365ac6a6e82ae3a9c29ed52.stex"
+path="res://.import/gutschek4.png-49ce44b8dd2f04e3c162e1a571f83651.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/gutschek/gutschek4.png"
-dest_files=[ "res://.import/gutschek4.png-b80eee29f365ac6a6e82ae3a9c29ed52.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/gutschek/gutschek4.png"
+dest_files=[ "res://.import/gutschek4.png-49ce44b8dd2f04e3c162e1a571f83651.stex" ]
 
 [params]
 

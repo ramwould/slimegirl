@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lucky.png-6161abb3cc1c58459e48655f59876e03.stex"
+path="res://.import/lucky.png-3d79a2a50eb6e26218929d3d6b5d6e88.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/lucky.png"
-dest_files=[ "res://.import/lucky.png-6161abb3cc1c58459e48655f59876e03.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/lucky.png"
+dest_files=[ "res://.import/lucky.png-3d79a2a50eb6e26218929d3d6b5d6e88.stex" ]
 
 [params]
 

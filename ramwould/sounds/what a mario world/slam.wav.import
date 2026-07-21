@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/slam.wav-b5773aa6cfde82220997f9143a432070.sample"
+path="res://.import/slam.wav-f79e9186e970ce547666423c3c1ebc0f.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/slam.wav"
-dest_files=[ "res://.import/slam.wav-b5773aa6cfde82220997f9143a432070.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/slam.wav"
+dest_files=[ "res://.import/slam.wav-f79e9186e970ce547666423c3c1ebc0f.sample" ]
 
 [params]
 

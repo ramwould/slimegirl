@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fissionbomber_i.png-f7b57882417352e1dfad66de71bb168a.stex"
+path="res://.import/fissionbomber_i.png-13b5f55315f239afe41c1dbfc9203f50.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/fissionbomber_i.png"
-dest_files=[ "res://.import/fissionbomber_i.png-f7b57882417352e1dfad66de71bb168a.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/fissionbomber_i.png"
+dest_files=[ "res://.import/fissionbomber_i.png-13b5f55315f239afe41c1dbfc9203f50.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nuh-uh_UP6.png-a63be618dfec73bbae6eb69d623a8f82.stex"
+path="res://.import/nuh-uh_UP6.png-6c8e692340874d22aa63f6d0822c2f43.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/NUH-UH/nuh-uh_UP6.png"
-dest_files=[ "res://.import/nuh-uh_UP6.png-a63be618dfec73bbae6eb69d623a8f82.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/NUH-UH/nuh-uh_UP6.png"
+dest_files=[ "res://.import/nuh-uh_UP6.png-6c8e692340874d22aa63f6d0822c2f43.stex" ]
 
 [params]
 

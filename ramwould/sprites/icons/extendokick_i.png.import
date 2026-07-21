@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/extendokick_i.png-076899208fe1ae11ab8a5b75b8ab598a.stex"
+path="res://.import/extendokick_i.png-f9d9d61ec3ec930bc7cee3032e98be83.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/extendokick_i.png"
-dest_files=[ "res://.import/extendokick_i.png-076899208fe1ae11ab8a5b75b8ab598a.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/extendokick_i.png"
+dest_files=[ "res://.import/extendokick_i.png-f9d9d61ec3ec930bc7cee3032e98be83.stex" ]
 
 [params]
 

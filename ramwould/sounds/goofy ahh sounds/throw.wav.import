@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/throw.wav-a84e101191c91f9e9e8148ba7bb14f61.sample"
+path="res://.import/throw.wav-72858980c155f838fe503d641c97dea2.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/throw.wav"
-dest_files=[ "res://.import/throw.wav-a84e101191c91f9e9e8148ba7bb14f61.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/throw.wav"
+dest_files=[ "res://.import/throw.wav-72858980c155f838fe503d641c97dea2.sample" ]
 
 [params]
 

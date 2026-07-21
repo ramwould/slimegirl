@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Fire.wav-5bd46b106b9eace8f57a5e0add09840f.sample"
+path="res://.import/Fire.wav-1d15d0161c1be89ba6a4e16f7474b0a5.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Fire.wav"
-dest_files=[ "res://.import/Fire.wav-5bd46b106b9eace8f57a5e0add09840f.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Fire.wav"
+dest_files=[ "res://.import/Fire.wav-1d15d0161c1be89ba6a4e16f7474b0a5.sample" ]
 
 [params]
 

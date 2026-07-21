@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pounce_on_it_ayo_pause-20.png-65acce0ea75644fb6181088fa2e7d97a.stex"
+path="res://.import/pounce_on_it_ayo_pause-20.png-141410b3d590744567c633689f4652d3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/pounce/pounce_on_it_ayo_pause-20.png"
-dest_files=[ "res://.import/pounce_on_it_ayo_pause-20.png-65acce0ea75644fb6181088fa2e7d97a.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/pounce/pounce_on_it_ayo_pause-20.png"
+dest_files=[ "res://.import/pounce_on_it_ayo_pause-20.png-141410b3d590744567c633689f4652d3.stex" ]
 
 [params]
 

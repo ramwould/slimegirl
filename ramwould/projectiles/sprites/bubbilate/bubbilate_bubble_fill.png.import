@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bubbilate_bubble_fill.png-4cfc31d70d7b26210425602994ea6847.stex"
+path="res://.import/bubbilate_bubble_fill.png-3836522aec3d3cc32be7b546d2b0e576.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/projectiles/sprites/bubbilate/bubbilate_bubble_fill.png"
-dest_files=[ "res://.import/bubbilate_bubble_fill.png-4cfc31d70d7b26210425602994ea6847.stex" ]
+source_file="res://slimegirl/ramwould/projectiles/sprites/bubbilate/bubbilate_bubble_fill.png"
+dest_files=[ "res://.import/bubbilate_bubble_fill.png-3836522aec3d3cc32be7b546d2b0e576.stex" ]
 
 [params]
 

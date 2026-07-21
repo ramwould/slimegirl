@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kombostarter_i.png-ab003af85c8699d7fd2d1d2d8f87139e.stex"
+path="res://.import/kombostarter_i.png-304f4059c0d435d9f62a3331bcb7dcf9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/kombostarter_i.png"
-dest_files=[ "res://.import/kombostarter_i.png-ab003af85c8699d7fd2d1d2d8f87139e.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/kombostarter_i.png"
+dest_files=[ "res://.import/kombostarter_i.png-304f4059c0d435d9f62a3331bcb7dcf9.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Boss Hit.wav-0f61b61ca5e41e175319d96dd64760f6.sample"
+path="res://.import/Boss Hit.wav-5ec2438ecefb5a46600143cac51077be.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Boss Hit.wav"
-dest_files=[ "res://.import/Boss Hit.wav-0f61b61ca5e41e175319d96dd64760f6.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Boss Hit.wav"
+dest_files=[ "res://.import/Boss Hit.wav-5ec2438ecefb5a46600143cac51077be.sample" ]
 
 [params]
 

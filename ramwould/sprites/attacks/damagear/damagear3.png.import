@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/damagear3.png-446e77c9e8bb6c5babe7a6564357c8f2.stex"
+path="res://.import/damagear3.png-72e57a5f009d20a2ec51aabe0108d5ae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/damagear/damagear3.png"
-dest_files=[ "res://.import/damagear3.png-446e77c9e8bb6c5babe7a6564357c8f2.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/damagear/damagear3.png"
+dest_files=[ "res://.import/damagear3.png-72e57a5f009d20a2ec51aabe0108d5ae.stex" ]
 
 [params]
 

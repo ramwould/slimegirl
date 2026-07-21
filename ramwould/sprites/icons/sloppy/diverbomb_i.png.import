@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diverbomb_i.png-435a07278f32f403ee5d137eb72cc324.stex"
+path="res://.import/diverbomb_i.png-70d9227a4981ddef19114816f77152c2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/diverbomb_i.png"
-dest_files=[ "res://.import/diverbomb_i.png-435a07278f32f403ee5d137eb72cc324.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/diverbomb_i.png"
+dest_files=[ "res://.import/diverbomb_i.png-70d9227a4981ddef19114816f77152c2.stex" ]
 
 [params]
 

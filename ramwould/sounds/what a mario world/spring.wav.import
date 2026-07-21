@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/spring.wav-1e6faba363128645f68ed5998332be66.sample"
+path="res://.import/spring.wav-779f64d0b65854db924d6e56211b9c76.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/spring.wav"
-dest_files=[ "res://.import/spring.wav-1e6faba363128645f68ed5998332be66.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/spring.wav"
+dest_files=[ "res://.import/spring.wav-779f64d0b65854db924d6e56211b9c76.sample" ]
 
 [params]
 

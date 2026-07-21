@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/spongewalk2.wav-4a5bca0f07c39a5de846170be302b475.sample"
+path="res://.import/spongewalk2.wav-9577ee78309fa394230badd28895dd3f.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/spongewalk2.wav"
-dest_files=[ "res://.import/spongewalk2.wav-4a5bca0f07c39a5de846170be302b475.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/spongewalk2.wav"
+dest_files=[ "res://.import/spongewalk2.wav-9577ee78309fa394230badd28895dd3f.sample" ]
 
 [params]
 

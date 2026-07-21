@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Score Tally.wav-61332c781fbf9087df6b98673fcd0452.sample"
+path="res://.import/Score Tally.wav-45762af70f8ce710e512276f0b186e8a.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Score Tally.wav"
-dest_files=[ "res://.import/Score Tally.wav-61332c781fbf9087df6b98673fcd0452.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Score Tally.wav"
+dest_files=[ "res://.import/Score Tally.wav-45762af70f8ce710e512276f0b186e8a.sample" ]
 
 [params]
 

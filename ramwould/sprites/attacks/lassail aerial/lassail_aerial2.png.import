@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lassail_aerial2.png-0d6e7344d63b8636f4b027e191b54a94.stex"
+path="res://.import/lassail_aerial2.png-3dcd1ee274a43075ed8e870e08777f40.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/lassail aerial/lassail_aerial2.png"
-dest_files=[ "res://.import/lassail_aerial2.png-0d6e7344d63b8636f4b027e191b54a94.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/lassail aerial/lassail_aerial2.png"
+dest_files=[ "res://.import/lassail_aerial2.png-3dcd1ee274a43075ed8e870e08777f40.stex" ]
 
 [params]
 

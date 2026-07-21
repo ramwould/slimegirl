@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tailwhip vee too3.png-e0ea9d9bbab490c07ec6645d2c2ea11d.stex"
+path="res://.import/tailwhip vee too3.png-b3b08665aef870c0ff281db90c98d378.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/tailwhap/tailwhip vee too3.png"
-dest_files=[ "res://.import/tailwhip vee too3.png-e0ea9d9bbab490c07ec6645d2c2ea11d.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/tailwhap/tailwhip vee too3.png"
+dest_files=[ "res://.import/tailwhip vee too3.png-b3b08665aef870c0ff281db90c98d378.stex" ]
 
 [params]
 

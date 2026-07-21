@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/melt.png-459cf581a9426861ba20ccd7d6a93395.stex"
+path="res://.import/melt.png-4f715cdf8451c8aaab0db3d0ed978490.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/melt.png"
-dest_files=[ "res://.import/melt.png-459cf581a9426861ba20ccd7d6a93395.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/melt.png"
+dest_files=[ "res://.import/melt.png-4f715cdf8451c8aaab0db3d0ed978490.stex" ]
 
 [params]
 

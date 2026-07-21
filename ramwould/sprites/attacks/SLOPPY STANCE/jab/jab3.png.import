@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jab3.png-d6d6f98694314ec498038508d838f407.stex"
+path="res://.import/jab3.png-cb76f83e38cf82787e412222cd8200bc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/jab/jab3.png"
-dest_files=[ "res://.import/jab3.png-d6d6f98694314ec498038508d838f407.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/jab/jab3.png"
+dest_files=[ "res://.import/jab3.png-cb76f83e38cf82787e412222cd8200bc.stex" ]
 
 [params]
 

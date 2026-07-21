@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/twirl.wav-85426e66b9683ed9422dc15f4922028b.sample"
+path="res://.import/twirl.wav-94877fe258f29a8d1031a3552ade293b.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/twirl.wav"
-dest_files=[ "res://.import/twirl.wav-85426e66b9683ed9422dc15f4922028b.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/twirl.wav"
+dest_files=[ "res://.import/twirl.wav-94877fe258f29a8d1031a3552ade293b.sample" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/twang02.wav-789853fa3835fd15d0889311c5e6189b.sample"
+path="res://.import/twang02.wav-3466a8bab735b741250b6c33b8ed97fa.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/twang02.wav"
-dest_files=[ "res://.import/twang02.wav-789853fa3835fd15d0889311c5e6189b.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/twang02.wav"
+dest_files=[ "res://.import/twang02.wav-3466a8bab735b741250b6c33b8ed97fa.sample" ]
 
 [params]
 

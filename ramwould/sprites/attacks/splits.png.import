@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/splits.png-386b7423f3f2e2c680b5edfbf2ee9e9e.stex"
+path="res://.import/splits.png-2810f3e6795b564770667b2842b62f6b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/splits.png"
-dest_files=[ "res://.import/splits.png-386b7423f3f2e2c680b5edfbf2ee9e9e.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/splits.png"
+dest_files=[ "res://.import/splits.png-2810f3e6795b564770667b2842b62f6b.stex" ]
 
 [params]
 

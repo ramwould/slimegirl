@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/barrel_piece.png-de0b55ac3ff96667bdcab3d7efef84a2.stex"
+path="res://.import/barrel_piece.png-cb92ab60c6d60d10542b4622d226f54b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/barrel_piece.png"
-dest_files=[ "res://.import/barrel_piece.png-de0b55ac3ff96667bdcab3d7efef84a2.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/barrel_piece.png"
+dest_files=[ "res://.import/barrel_piece.png-cb92ab60c6d60d10542b4622d226f54b.stex" ]
 
 [params]
 

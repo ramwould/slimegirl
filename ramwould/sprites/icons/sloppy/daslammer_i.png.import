@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/daslammer_i.png-22077b1882fa1b523a4e847dcd91d073.stex"
+path="res://.import/daslammer_i.png-d450839e1bef390308b65bc24fbcbe76.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/sloppy/daslammer_i.png"
-dest_files=[ "res://.import/daslammer_i.png-22077b1882fa1b523a4e847dcd91d073.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/sloppy/daslammer_i.png"
+dest_files=[ "res://.import/daslammer_i.png-d450839e1bef390308b65bc24fbcbe76.stex" ]
 
 [params]
 

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/wallsmack.wav-c964359b98765d605fc5450c422f1659.sample"
+path="res://.import/wallsmack.wav-db69ce0a1d37648e011d02dd42b76ce3.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/wallsmack.wav"
-dest_files=[ "res://.import/wallsmack.wav-c964359b98765d605fc5450c422f1659.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/wallsmack.wav"
+dest_files=[ "res://.import/wallsmack.wav-db69ce0a1d37648e011d02dd42b76ce3.sample" ]
 
 [params]
 

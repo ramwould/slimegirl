@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/poke_small03.wav-1c46d589c21ccaf3f89bb59d9c17723d.sample"
+path="res://.import/poke_small03.wav-2f0b4ab368df8c4e2c447fbc24f7b5c3.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/poke_small03.wav"
-dest_files=[ "res://.import/poke_small03.wav-1c46d589c21ccaf3f89bb59d9c17723d.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/poke_small03.wav"
+dest_files=[ "res://.import/poke_small03.wav-2f0b4ab368df8c4e2c447fbc24f7b5c3.sample" ]
 
 [params]
 

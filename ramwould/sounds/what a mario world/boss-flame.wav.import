@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/boss-flame.wav-90e1cd7906e9c69e4f90599955f16649.sample"
+path="res://.import/boss-flame.wav-dd6579608f99ad79ba1529eb25647ab9.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/boss-flame.wav"
-dest_files=[ "res://.import/boss-flame.wav-90e1cd7906e9c69e4f90599955f16649.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/boss-flame.wav"
+dest_files=[ "res://.import/boss-flame.wav-dd6579608f99ad79ba1529eb25647ab9.sample" ]
 
 [params]
 

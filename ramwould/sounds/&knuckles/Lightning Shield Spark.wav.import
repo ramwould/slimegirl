@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Lightning Shield Spark.wav-f5a03a92490199e75b87a0a1731d950b.sample"
+path="res://.import/Lightning Shield Spark.wav-79da622e86c990c94d024bd1ad1b77aa.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Lightning Shield Spark.wav"
-dest_files=[ "res://.import/Lightning Shield Spark.wav-f5a03a92490199e75b87a0a1731d950b.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Lightning Shield Spark.wav"
+dest_files=[ "res://.import/Lightning Shield Spark.wav-79da622e86c990c94d024bd1ad1b77aa.sample" ]
 
 [params]
 

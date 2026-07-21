@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/camera.wav-7a17e68b59ea11430cb672ddb9249054.sample"
+path="res://.import/camera.wav-3a8965d24f4e9f416385cadde171b216.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/what a mario world/camera.wav"
-dest_files=[ "res://.import/camera.wav-7a17e68b59ea11430cb672ddb9249054.sample" ]
+source_file="res://slimegirl/ramwould/sounds/what a mario world/camera.wav"
+dest_files=[ "res://.import/camera.wav-3a8965d24f4e9f416385cadde171b216.sample" ]
 
 [params]
 

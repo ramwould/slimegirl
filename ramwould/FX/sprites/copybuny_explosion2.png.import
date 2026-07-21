@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/copybuny_explosion2.png-5cbe5178866c138025402f123328c1a4.stex"
+path="res://.import/copybuny_explosion2.png-679a43c3e9ebd67730ca89c3773b810d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/copybuny_explosion2.png"
-dest_files=[ "res://.import/copybuny_explosion2.png-5cbe5178866c138025402f123328c1a4.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/copybuny_explosion2.png"
+dest_files=[ "res://.import/copybuny_explosion2.png-679a43c3e9ebd67730ca89c3773b810d.stex" ]
 
 [params]
 

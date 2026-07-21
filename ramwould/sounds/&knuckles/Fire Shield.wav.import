@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Fire Shield.wav-37cfb554609d8f000b30d24f4b3745ff.sample"
+path="res://.import/Fire Shield.wav-38cfa4105ce2aa899115ea02e0a9b3e9.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Fire Shield.wav"
-dest_files=[ "res://.import/Fire Shield.wav-37cfb554609d8f000b30d24f4b3745ff.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Fire Shield.wav"
+dest_files=[ "res://.import/Fire Shield.wav-38cfa4105ce2aa899115ea02e0a9b3e9.sample" ]
 
 [params]
 

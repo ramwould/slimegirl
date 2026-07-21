@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/pump_slime.wav-f84878077ec8ce45579c87ae88111d32.sample"
+path="res://.import/pump_slime.wav-1db86f258274278d70bd96e849b7064c.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/pump_slime.wav"
-dest_files=[ "res://.import/pump_slime.wav-f84878077ec8ce45579c87ae88111d32.sample" ]
+source_file="res://slimegirl/ramwould/sounds/pump_slime.wav"
+dest_files=[ "res://.import/pump_slime.wav-1db86f258274278d70bd96e849b7064c.sample" ]
 
 [params]
 

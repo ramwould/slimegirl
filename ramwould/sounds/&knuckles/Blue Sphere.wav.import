@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Blue Sphere.wav-4803c6c734de91e5d0539479b21f1eaf.sample"
+path="res://.import/Blue Sphere.wav-9f2abfb220b0f7b9369d502c76479c2f.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Blue Sphere.wav"
-dest_files=[ "res://.import/Blue Sphere.wav-4803c6c734de91e5d0539479b21f1eaf.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Blue Sphere.wav"
+dest_files=[ "res://.import/Blue Sphere.wav-9f2abfb220b0f7b9369d502c76479c2f.sample" ]
 
 [params]
 

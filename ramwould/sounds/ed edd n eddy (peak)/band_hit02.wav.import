@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/band_hit02.wav-d1090adaf28308bace4c904cf844045f.sample"
+path="res://.import/band_hit02.wav-ed7d2e5a56c6d8e90cfb0b36282d0c4c.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/ed edd n eddy (peak)/band_hit02.wav"
-dest_files=[ "res://.import/band_hit02.wav-d1090adaf28308bace4c904cf844045f.sample" ]
+source_file="res://slimegirl/ramwould/sounds/ed edd n eddy (peak)/band_hit02.wav"
+dest_files=[ "res://.import/band_hit02.wav-ed7d2e5a56c6d8e90cfb0b36282d0c4c.sample" ]
 
 [params]
 

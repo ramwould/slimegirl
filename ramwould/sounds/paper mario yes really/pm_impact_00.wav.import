@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/pm_impact_00.wav-29425129d47ddb2d37f69c22d2112264.sample"
+path="res://.import/pm_impact_00.wav-36b7639178c73445dfd05d452558b5a5.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/paper mario yes really/pm_impact_00.wav"
-dest_files=[ "res://.import/pm_impact_00.wav-29425129d47ddb2d37f69c22d2112264.sample" ]
+source_file="res://slimegirl/ramwould/sounds/paper mario yes really/pm_impact_00.wav"
+dest_files=[ "res://.import/pm_impact_00.wav-36b7639178c73445dfd05d452558b5a5.sample" ]
 
 [params]
 

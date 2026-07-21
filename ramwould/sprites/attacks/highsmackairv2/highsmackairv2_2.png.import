@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/highsmackairv2_2.png-fac4842eee2a6cfb8e7c85852342d20e.stex"
+path="res://.import/highsmackairv2_2.png-267daab7e2e464f68df9ef7e22e8cbad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/highsmackairv2/highsmackairv2_2.png"
-dest_files=[ "res://.import/highsmackairv2_2.png-fac4842eee2a6cfb8e7c85852342d20e.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/highsmackairv2/highsmackairv2_2.png"
+dest_files=[ "res://.import/highsmackairv2_2.png-267daab7e2e464f68df9ef7e22e8cbad.stex" ]
 
 [params]
 

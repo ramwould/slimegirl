@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/uppies6.png-1cfd309e96a36c687e17df18cf05cdcf.stex"
+path="res://.import/uppies6.png-ae8a2e5adaad6df24375e8edf63d3347.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/uppies/uppies6.png"
-dest_files=[ "res://.import/uppies6.png-1cfd309e96a36c687e17df18cf05cdcf.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/uppies/uppies6.png"
+dest_files=[ "res://.import/uppies6.png-ae8a2e5adaad6df24375e8edf63d3347.stex" ]
 
 [params]
 

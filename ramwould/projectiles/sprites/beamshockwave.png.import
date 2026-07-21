@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beamshockwave.png-c9ceabe17d84da27a889d3d1ccd57f90.stex"
+path="res://.import/beamshockwave.png-ff6b2b2981f14679d0d3fd08da5ab71b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/projectiles/sprites/beamshockwave.png"
-dest_files=[ "res://.import/beamshockwave.png-c9ceabe17d84da27a889d3d1ccd57f90.stex" ]
+source_file="res://slimegirl/ramwould/projectiles/sprites/beamshockwave.png"
+dest_files=[ "res://.import/beamshockwave.png-ff6b2b2981f14679d0d3fd08da5ab71b.stex" ]
 
 [params]
 

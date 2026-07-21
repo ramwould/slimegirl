@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/meter_icon_beamcharge.png-deb69b72187da0fad8390ee44f9df3f2.stex"
+path="res://.import/meter_icon_beamcharge.png-f2dfa67f2c87898479bebea1f42b2a3f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/UI/the better bar/meter_icon_beamcharge.png"
-dest_files=[ "res://.import/meter_icon_beamcharge.png-deb69b72187da0fad8390ee44f9df3f2.stex" ]
+source_file="res://slimegirl/ramwould/sprites/UI/the better bar/meter_icon_beamcharge.png"
+dest_files=[ "res://.import/meter_icon_beamcharge.png-f2dfa67f2c87898479bebea1f42b2a3f.stex" ]
 
 [params]
 

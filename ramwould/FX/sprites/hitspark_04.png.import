@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hitspark_04.png-b2b648d16e5eb69b95e2c7c0237146f4.stex"
+path="res://.import/hitspark_04.png-efb5c5d1daed43ef76d7871db763d048.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/hitspark_04.png"
-dest_files=[ "res://.import/hitspark_04.png-b2b648d16e5eb69b95e2c7c0237146f4.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/hitspark_04.png"
+dest_files=[ "res://.import/hitspark_04.png-efb5c5d1daed43ef76d7871db763d048.stex" ]
 
 [params]
 

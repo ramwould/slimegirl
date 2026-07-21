@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/skidslide4.png-cda80ba1dd637d72b343f6a1b46d4b94.stex"
+path="res://.import/skidslide4.png-dc1c28f93c672cf8102d19f78bb414ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/skidslide/skidslide4.png"
-dest_files=[ "res://.import/skidslide4.png-cda80ba1dd637d72b343f6a1b46d4b94.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/skidslide/skidslide4.png"
+dest_files=[ "res://.import/skidslide4.png-dc1c28f93c672cf8102d19f78bb414ab.stex" ]
 
 [params]
 

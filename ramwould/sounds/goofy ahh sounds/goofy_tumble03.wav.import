@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/goofy_tumble03.wav-7982c9ca67655ffeaffe99524ee11135.sample"
+path="res://.import/goofy_tumble03.wav-376d223756499b8f4d237f14aeec32e3.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/goofy_tumble03.wav"
-dest_files=[ "res://.import/goofy_tumble03.wav-7982c9ca67655ffeaffe99524ee11135.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/goofy_tumble03.wav"
+dest_files=[ "res://.import/goofy_tumble03.wav-376d223756499b8f4d237f14aeec32e3.sample" ]
 
 [params]
 

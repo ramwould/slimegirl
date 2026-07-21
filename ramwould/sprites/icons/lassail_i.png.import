@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lassail_i.png-6d5f166755eb03d6f1c2be9e5aa82d77.stex"
+path="res://.import/lassail_i.png-a616462d78674b90d395e46db6ea6bdc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/lassail_i.png"
-dest_files=[ "res://.import/lassail_i.png-6d5f166755eb03d6f1c2be9e5aa82d77.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/lassail_i.png"
+dest_files=[ "res://.import/lassail_i.png-a616462d78674b90d395e46db6ea6bdc.stex" ]
 
 [params]
 

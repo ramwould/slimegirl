@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slash_fx.png-cfe882fd4dcc35db0f84c4a18f7eab62.stex"
+path="res://.import/slash_fx.png-47e17b6ce31408d78453fbf488c03148.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/slash_fx.png"
-dest_files=[ "res://.import/slash_fx.png-cfe882fd4dcc35db0f84c4a18f7eab62.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/slash_fx.png"
+dest_files=[ "res://.import/slash_fx.png-47e17b6ce31408d78453fbf488c03148.stex" ]
 
 [params]
 

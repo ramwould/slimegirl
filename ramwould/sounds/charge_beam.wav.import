@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/charge_beam.wav-2683608d43886f7369553eef3b34fe8c.sample"
+path="res://.import/charge_beam.wav-b9bb49dc99da684b2e606ab34c819e71.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/charge_beam.wav"
-dest_files=[ "res://.import/charge_beam.wav-2683608d43886f7369553eef3b34fe8c.sample" ]
+source_file="res://slimegirl/ramwould/sounds/charge_beam.wav"
+dest_files=[ "res://.import/charge_beam.wav-b9bb49dc99da684b2e606ab34c819e71.sample" ]
 
 [params]
 

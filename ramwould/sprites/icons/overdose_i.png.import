@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/overdose_i.png-2d76feb523d9d626f00ad5e730f6e49d.stex"
+path="res://.import/overdose_i.png-f14b4acac3149d8193b6be3d20a1a80a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/overdose_i.png"
-dest_files=[ "res://.import/overdose_i.png-2d76feb523d9d626f00ad5e730f6e49d.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/overdose_i.png"
+dest_files=[ "res://.import/overdose_i.png-f14b4acac3149d8193b6be3d20a1a80a.stex" ]
 
 [params]
 

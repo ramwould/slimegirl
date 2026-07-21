@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/noxipaste.wav-8f8fdf0e1a71071f6dcbf4ebed30f645.sample"
+path="res://.import/noxipaste.wav-9007f2df68409b8b2718db948b29b544.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/noxipaste.wav"
-dest_files=[ "res://.import/noxipaste.wav-8f8fdf0e1a71071f6dcbf4ebed30f645.sample" ]
+source_file="res://slimegirl/ramwould/sounds/noxipaste.wav"
+dest_files=[ "res://.import/noxipaste.wav-9007f2df68409b8b2718db948b29b544.sample" ]
 
 [params]
 

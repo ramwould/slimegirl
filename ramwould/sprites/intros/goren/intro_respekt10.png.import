@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/intro_respekt10.png-0616d8891fe36ae80f316d0e6f4cac86.stex"
+path="res://.import/intro_respekt10.png-fbf62ff6da11d952734dde823aa06da6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/intros/goren/intro_respekt10.png"
-dest_files=[ "res://.import/intro_respekt10.png-0616d8891fe36ae80f316d0e6f4cac86.stex" ]
+source_file="res://slimegirl/ramwould/sprites/intros/goren/intro_respekt10.png"
+dest_files=[ "res://.import/intro_respekt10.png-fbf62ff6da11d952734dde823aa06da6.stex" ]
 
 [params]
 

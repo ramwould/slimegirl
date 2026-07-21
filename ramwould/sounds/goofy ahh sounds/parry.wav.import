@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/parry.wav-06b156e262f4d86a31f2e76dc36db679.sample"
+path="res://.import/parry.wav-503f1fffd75a5aca169bd28d7c27be4b.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/goofy ahh sounds/parry.wav"
-dest_files=[ "res://.import/parry.wav-06b156e262f4d86a31f2e76dc36db679.sample" ]
+source_file="res://slimegirl/ramwould/sounds/goofy ahh sounds/parry.wav"
+dest_files=[ "res://.import/parry.wav-503f1fffd75a5aca169bd28d7c27be4b.sample" ]
 
 [params]
 

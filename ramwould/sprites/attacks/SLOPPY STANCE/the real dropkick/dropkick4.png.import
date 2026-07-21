@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dropkick4.png-9044a17301febb0c073462a5cfe163d1.stex"
+path="res://.import/dropkick4.png-9ca2f0f40d43a0d9db5caea1dd597005.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/SLOPPY STANCE/the real dropkick/dropkick4.png"
-dest_files=[ "res://.import/dropkick4.png-9044a17301febb0c073462a5cfe163d1.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/SLOPPY STANCE/the real dropkick/dropkick4.png"
+dest_files=[ "res://.import/dropkick4.png-9ca2f0f40d43a0d9db5caea1dd597005.stex" ]
 
 [params]
 

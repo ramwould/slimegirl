@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beam_halo.png-a399414dafc48f7b8a6e36cefc62ddb4.stex"
+path="res://.import/beam_halo.png-6ddb25510d9174c0e999229ba032d79f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/beam_halo.png"
-dest_files=[ "res://.import/beam_halo.png-a399414dafc48f7b8a6e36cefc62ddb4.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/beam_halo.png"
+dest_files=[ "res://.import/beam_halo.png-6ddb25510d9174c0e999229ba032d79f.stex" ]
 
 [params]
 

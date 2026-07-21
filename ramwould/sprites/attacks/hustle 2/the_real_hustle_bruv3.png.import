@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/the_real_hustle_bruv3.png-a668b83f181adc9f86335315a857f954.stex"
+path="res://.import/the_real_hustle_bruv3.png-2f421676b6fc6e1791ed222b34525cbf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/hustle 2/the_real_hustle_bruv3.png"
-dest_files=[ "res://.import/the_real_hustle_bruv3.png-a668b83f181adc9f86335315a857f954.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/hustle 2/the_real_hustle_bruv3.png"
+dest_files=[ "res://.import/the_real_hustle_bruv3.png-2f421676b6fc6e1791ed222b34525cbf.stex" ]
 
 [params]
 

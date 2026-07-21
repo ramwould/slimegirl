@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snaggrab.png-03f9a4d78a5e2ac04eb0890681264a4c.stex"
+path="res://.import/snaggrab.png-910eb225871f31d49bf7d7af29cd0933.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/attacks/misc/snaggrab.png"
-dest_files=[ "res://.import/snaggrab.png-03f9a4d78a5e2ac04eb0890681264a4c.stex" ]
+source_file="res://slimegirl/ramwould/sprites/attacks/misc/snaggrab.png"
+dest_files=[ "res://.import/snaggrab.png-910eb225871f31d49bf7d7af29cd0933.stex" ]
 
 [params]
 

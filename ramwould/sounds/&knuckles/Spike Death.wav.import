@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Spike Death.wav-4ec48ccf2a3c5119fc9ac69e2af59802.sample"
+path="res://.import/Spike Death.wav-5690f7741c02b6610d2ca71526fabcfd.sample"
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sounds/&knuckles/Spike Death.wav"
-dest_files=[ "res://.import/Spike Death.wav-4ec48ccf2a3c5119fc9ac69e2af59802.sample" ]
+source_file="res://slimegirl/ramwould/sounds/&knuckles/Spike Death.wav"
+dest_files=[ "res://.import/Spike Death.wav-5690f7741c02b6610d2ca71526fabcfd.sample" ]
 
 [params]
 

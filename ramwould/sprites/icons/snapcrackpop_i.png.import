@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snapcrackpop_i.png-3b3a632cfa85eae27def11cd47159233.stex"
+path="res://.import/snapcrackpop_i.png-689eb3ce18d6917e55630b7df2bc35d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/sprites/icons/snapcrackpop_i.png"
-dest_files=[ "res://.import/snapcrackpop_i.png-3b3a632cfa85eae27def11cd47159233.stex" ]
+source_file="res://slimegirl/ramwould/sprites/icons/snapcrackpop_i.png"
+dest_files=[ "res://.import/snapcrackpop_i.png-689eb3ce18d6917e55630b7df2bc35d2.stex" ]
 
 [params]
 

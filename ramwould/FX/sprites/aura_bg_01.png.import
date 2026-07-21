@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/aura_bg_01.png-e9e81915ed3dd6e0a92d4653cb9b9815.stex"
+path="res://.import/aura_bg_01.png-5c81932ca6a952c9682255740039f317.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slimegirl_/ramwould/FX/sprites/aura_bg_01.png"
-dest_files=[ "res://.import/aura_bg_01.png-e9e81915ed3dd6e0a92d4653cb9b9815.stex" ]
+source_file="res://slimegirl/ramwould/FX/sprites/aura_bg_01.png"
+dest_files=[ "res://.import/aura_bg_01.png-5c81932ca6a952c9682255740039f317.stex" ]
 
 [params]
 
