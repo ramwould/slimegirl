@@ -66,9 +66,13 @@ func _enter():
 			var vec01 = xy_to_dir(data["Position"].x, data["Position"].y, host.current_radiation_radius)
 			pos_x = vec01.x
 			pos_y = vec01.y
-			var vec02 = xy_to_dir(data["Influence"].x, data["Influence"].y)
-			influence_x = vec02.x
-			influence_y = vec02.y
+			
+#			var vec02 = xy_to_dir(data["Influence"].x, data["Influence"].y)
+#			influence_x = vec02.x
+#			influence_y = vec02.y
+			var di_infl = xy_to_dir(host.current_di.x, host.current_di.y, "1.0")
+			influence_x = di_infl.x
+			influence_y = di_infl.y
 	midpoint = Vector2.ZERO
 	
 func set_saved_snag_position():

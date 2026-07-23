@@ -84,7 +84,6 @@ __meta__ = {
 gravity = "0.33"
 air_friction = "0.18"
 extra_state_variables = "on_fire"
-hookable = true
 allow_host_hit_cancelling = false
 allow_projectile_to_damage_slimegirl = false
 slime_color_to_use = "style_2"

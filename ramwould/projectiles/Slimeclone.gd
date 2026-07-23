@@ -1,12 +1,13 @@
 extends "res://slimegirl/ramwould/projectiles/PoisonProjectile.gd"
 
 const IS_SLIMECLONE = true
-const SLIME_FRIC = "0.07"
+const SLIME_FRIC = "0.085"
 const SLIME_KNOCKBACK_MOD = "1.2"
 const SLIME_KNOCKBACK_MOD_OPPONENT = "1.0"
 const SLIME_KNOCKBACK_MOD_SLOPPY = "1.6"
 const SLIME_KNOCKBACK_UPWARDS_Y_REDUCTION = "0.6"
 const SLIME_MAX_UPWARDS_Y_SPEED = "-12.0"
+const SLIME_DI_MOD = "2.8"
 
 var DISABLED_COLOR = Color.white
 
@@ -102,6 +103,8 @@ func tick():
 	
 	update_data()
 	var pos = get_pos()
+	
+	if disabled: return
 	if bounced:
 		bounced = false
 		
@@ -164,13 +167,15 @@ func hit_by(hitbox):
 			return
 			
 		var fighter = obj_from_name(hitbox.host)
+		var slimegirl = get_fighter() as Fighter
 		if fighter is Fighter:
 			hitlag_ticks = 0
 			fighter.hitlag_ticks = 0
 			
 			var kb_mod = SLIME_KNOCKBACK_MOD
-			if (fighter == get_fighter() and fighter.stance == "Sloppy"):
+			if (fighter == slimegirl and fighter.stance == "Sloppy"):
 				kb_mod = SLIME_KNOCKBACK_MOD_SLOPPY
+				
 			if fighter == get_opponent():
 				kb_mod = SLIME_KNOCKBACK_MOD_OPPONENT
 				
@@ -179,6 +184,15 @@ func hit_by(hitbox):
 				hitbox.dir_y, 
 				fixed.mul(hitbox.knockback,kb_mod)
 				)
+			
+			if fighter == slimegirl:
+				var DI = xy_to_dir(
+					slimegirl.current_di.x, 
+					slimegirl.current_di.y,
+					SLIME_DI_MOD
+					)
+				dir = fixed.vec_add(dir.x, dir.y, DI.x, DI.y)
+			
 			if fixed.lt(dir.y, "0"):
 				dir.y = fixed.mul(dir.y, SLIME_KNOCKBACK_UPWARDS_Y_REDUCTION)
 			if is_grounded() and not aerial_clone:

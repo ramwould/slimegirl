@@ -961,8 +961,9 @@ func on_state_started(state):
 	on_slimetrail_this_state = object_on_trail(self)
 	on_fire_this_state = false
 	opponent_on_slimetrail_this_state = object_on_trail(opponent)
-
-	if state is ThrowState:
+	
+	var ignore_these = ["Snagtrik_Throw"]
+	if state is ThrowState and not ignore_these.has(state.name):
 		disable_goop_visual = true
 		
 func on_state_ended(state):

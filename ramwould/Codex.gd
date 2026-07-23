@@ -150,7 +150,9 @@ It's speed is affected by aura size."""
 	codex.moveset["HighSmackGrounded"].title = "H. Smack (Grounded)"
 	codex.moveset["HighSmackAerial"].title = "H. Smack (Aerial)"
 	
-	codex.moveset["Syringe"].desc = """Shoot out a super sharp spike somewhere within her aura."""
+	codex.moveset["Syringe"].desc = """Shoot out a super sharp spike somewhere within her aura.
+
+Knockback always launches away from aura center."""
 	codex.moveset["SyringeLassail"].visible = false
 	
 	codex.moveset["Assimilate"].desc = """Assimilates [color=#8c8c8c](or attempt to assimilate)[/color] a projectile into Slimegirl for more power!
@@ -293,7 +295,7 @@ func setup_achievements(list):
 		"desc": "Apply [color=#ffa00d]10000[/color] total ticks of [color=#78df2b]poison[/color].",
 		"icon": "res://slimegirl/ramwould/sprites/achivements/achive_unlocked.png",
 		"counter_id": "poison_tracker",
-		"counter_target": 10000,
+		"counter_target": 4000,
 	})
 	
 	list.define("achivement_cache", {
@@ -358,13 +360,7 @@ func setup_achievements(list):
 		"desc": "[color=#ffa00d]Slam[/color] into a wall.",
 		"icon": "res://slimegirl/ramwould/sprites/achivements/achive_unlocked.png",
 	})
-	
-	list.define("achivement_power", {
-		"title": "Overpowered",
-		"desc": "Achieve [color=#ffa00d]2.5 or more[/color] poison potency in one match.",
-		"icon": "res://slimegirl/ramwould/sprites/achivements/achive_unlocked.png",
-	})
-	
+		
 	list.define("achivement_spooberman", {
 		"title": "The Amazing Goopy Gal",
 		"desc": "[color=#ffa00d]Fling yourself from projectile[/color] to projectile without touching the ground or getting hit.",

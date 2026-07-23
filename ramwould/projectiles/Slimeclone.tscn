@@ -35,7 +35,6 @@ can_be_hit_by_melee = true
 hit_by_self_projectiles = true
 free_cancel_on_hit = true
 apply_hitlag_when_hit_by_melee = false
-hookable = true
 allow_host_hit_cancelling = false
 allow_projectile_to_damage_slimegirl = false
 slime_color_to_use = "style_2"
@@ -94,6 +93,7 @@ __meta__ = {
 "_editor_description_": ""
 }
 apply_forces = true
+apply_forces_no_limit = true
 particle_scene = ExtResource( 4 )
 spawn_particle_on_enter = true
 move_x = 0
