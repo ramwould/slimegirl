@@ -32,8 +32,6 @@ func disable():
 		queue_disabled = true
 		return
 		
-	.disable()
-	
 	var index = 0
 	for data in get_fighter().slimeclone_data:
 		if data.has("clone_name"):
@@ -49,6 +47,8 @@ func disable():
 		var explosion :BaseProjectile= spawn_object(on_fire_explosion, box_relative.x, box_relative.y, true, null, true)
 		explosion.allow_host_hit_cancelling = allow_host_hit_cancelling
 		explosion.immunity_susceptible = not allow_host_hit_cancelling
+		
+	.disable()
 		
 func _draw():
 	sprite.set_material( get_fighter().reversed_material )

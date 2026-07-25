@@ -1,16 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://ui/ActionSelector/PlayerExtra.tscn" type="PackedScene" id=1]
 [ext_resource path="res://button_container_theme.tres" type="Theme" id=2]
 [ext_resource path="res://slimegirl/ramwould/SlimegirlExtra.gd" type="Script" id=3]
 [ext_resource path="res://ui/XYPlot/XYPlot.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ui/HorizSlider/HorizSlider.tscn" type="PackedScene" id=5]
 [ext_resource path="res://slimegirl/ramwould/UI/CopybunyHolder.tscn" type="PackedScene" id=6]
 
 [node name="SlimegirlExtra" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." index="0"]
-margin_top = 197.0
+margin_top = 160.0
 margin_right = 300.0
 margin_bottom = 360.0
 size_flags_vertical = 8
@@ -55,12 +56,12 @@ align = 1
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" index="1"]
 margin_top = 75.0
 margin_right = 300.0
-margin_bottom = 163.0
+margin_bottom = 200.0
 size_flags_stretch_ratio = 12.89
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer2" index="0"]
 margin_right = 300.0
-margin_bottom = 88.0
+margin_bottom = 125.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_constants/separation = 1
@@ -144,17 +145,26 @@ custom_colors/font_color = Color( 0.392157, 0.823529, 0.419608, 1 )
 text = "Add Frikshun"
 align = 1
 
-[node name="TeleportTextStopBeingWeird-inator" type="Control" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="3"]
+[node name="AuraMultiplier" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="3" instance=ExtResource( 5 )]
+unique_name_in_owner = true
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_top = 75.0
 margin_right = 300.0
-margin_bottom = 75.0
+margin_bottom = 111.0
+apply_top_node_range = true
+
+[node name="TeleportTextStopBeingWeird-inator" type="Control" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="4"]
+margin_top = 112.0
+margin_right = 300.0
+margin_bottom = 112.0
 rect_min_size = Vector2( 50, 0 )
 
-[node name="Clone Label" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="4"]
+[node name="Clone Label" type="RichTextLabel" parent="VBoxContainer/HBoxContainer2/VBoxContainer2" index="5"]
 unique_name_in_owner = true
-margin_top = 76.0
+margin_top = 113.0
 margin_right = 300.0
-margin_bottom = 88.0
+margin_bottom = 125.0
 grow_vertical = 0
 rect_clip_content = false
 theme = ExtResource( 2 )

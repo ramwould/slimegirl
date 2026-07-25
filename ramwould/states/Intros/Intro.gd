@@ -12,15 +12,18 @@ func _frame_0():
 		
 	var charname = host.getCharacterName(host.opponent.id)
 	match charname:
-		"Juvenile", "Bunbun", "Slimpurt":
+		"Juvenile":
 			host.opponent.hitlag_ticks = 1
-			return "VS"+charname
+			return "VSJuvenile"
 		"Goren", "Shin Goren":
 			host.opponent.hitlag_ticks = 1
 			return "VSTheGorens"
-		"Lopunny":
+		"Bunbun", "Lopunny", "Vandal":
 			host.opponent.hitlag_ticks = 1
 			return "VSBunbun"
+		"Slimpurt", "AAIR":
+			host.opponent.hitlag_ticks = 1
+			return "VSSlimpurt"
 		"Slimegirl":
 			var choice = host.randi_choice(["VSBunbun", "VSSlimpurt", "VSTheGorens", "None"])
 			if choice != "None":

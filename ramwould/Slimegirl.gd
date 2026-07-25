@@ -38,6 +38,7 @@ var poison_tick_rate:int = 1 # low numbers = faster tick speed
 var current_radiation_radius:String = "0.0"
 var visual_radius:String = "0.0"
 var extra_radius_size_mult:String = "1.0" # radius size multiplier
+var aura_multiplier_while_inf:int = 1
 var radius_center_global_x:int = 0
 var radius_center_global_y:int = 0
 var lassail_proj = null
@@ -306,6 +307,7 @@ func _ready():
 		
 		"temporary_size_ticks",
 		"burst_size_ticks",
+		"aura_multiplier_while_inf",
 		
 		"meltdown_ticks",
 		"chernobyl_ticks",
@@ -1010,7 +1012,7 @@ func tick_before():
 	aura_stat_tick()
 	poison_damage_tick()
 		
-	poison_tick_rate = max(poison_tick_rate, 1)
+	poison_tick_rate = Utils.int_max(poison_tick_rate, 1)
 	
 	if is_poisoned():
 		if current_tick % poison_tick_rate == 0:
@@ -1071,32 +1073,28 @@ func tick():
 	_slimeclones_tick()
 	_heal_penalty_tick()
 	
-	if venobuster_ticks > 0:
-		venobuster_ticks -= 1
-	if boost_ticks > 0:
-		boost_ticks -= 1
-	if yank_ticks > 0:
-		yank_ticks -= 1
+	if venobuster_ticks > 0: venobuster_ticks -= 1
+	if boost_ticks > 0: boost_ticks -= 1
+	if yank_ticks > 0: yank_ticks -= 1
 		
 	current_radiation_radius = fixed.mul( DEFAULT_RADIATION_RADIUS, poison_potency )
 	current_radiation_radius = fixed.mul( current_radiation_radius, extra_radius_size_mult )
+	if infinite_resources:
+		current_radiation_radius = fixed.mul( 
+			current_radiation_radius, 
+			fixed_map("0", "100", "0.0", "5.0", str(aura_multiplier_while_inf))
+			)
+		
 	match stance:
-		"Intro":
-			current_radiation_radius = "0"
-		
-		"Normal":
-			pass
-		
-		"Sloppy":
-			pass
+		"Intro": current_radiation_radius = "0"
+		"Normal": pass
+		"Sloppy": pass
 			
 	_syringe_tick()
 	
 	snag_cooldown -= 1
-	if color_tween_ticks > 0:
-		color_tween_ticks -= 1
-	if color_tween2_ticks > 0:
-		color_tween2_ticks -= 1
+	if color_tween_ticks > 0: color_tween_ticks -= 1
+	if color_tween2_ticks > 0: color_tween2_ticks -= 1
 		
 	_snagtrik_tick()
 	_airmelt_tick()
@@ -1881,6 +1879,9 @@ func process_extra(extra:Dictionary):
 	if "slime_friction" in extra:
 		increased_friction = extra["slime_friction"]
 	
+	if "aura_multiplier" in extra:
+		aura_multiplier_while_inf = extra["aura_multiplier"].x
+		
 	if "current_time" in extra:
 		ACH_DATA_TIME = extra["current_time"]
 		

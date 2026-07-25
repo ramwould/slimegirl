@@ -28,8 +28,8 @@ func _ready():
 	Utils.pass_signal_along(copybuny_plot, self, "data_changed")
 	Utils.pass_signal_along(noxipaste_options, self, "data_changed")
 	Utils.pass_signal_along(friction_button, self, "pressed", "data_changed")
-
-
+	Utils.pass_signal_along($"%AuraMultiplier", self, "data_changed")
+	
 func _on_copybuny_toggled(button_pressed):
 	copybuny_plot.visible = button_pressed
 	noxipaste_detonate_button.set_pressed_no_signal(false)
@@ -58,6 +58,7 @@ func get_extra():
 	)
 	
 	if initializing:
+		$"%AuraMultiplier".get_child(1).value = 20
 		return { "current_time":the_watch_int }
 		
 	return {
@@ -76,13 +77,14 @@ func get_extra():
 		"input_grounded":opponent_on_ground,
 		
 		"slime_friction":button_active_and_pressed(friction_button),
+		"aura_multiplier":$"%AuraMultiplier".get_data(),
 		
 		"current_time":the_watch_int,
 	}
 
 
 func show_options():
-
+	
 	
 	if attached_to_clone(): 
 		$"%Detach".text = "Detach (%sf)" % str(fighter.CLONE_DETACH_EXPLODE_DELAY)
@@ -143,6 +145,9 @@ func setup_buttons():
 	
 	friction_button.visible = fighter.object_on_trail(fighter)
 	friction_button.set_pressed_no_signal( fighter.increased_friction )
+	
+	$"%AuraMultiplier".visible = fighter.infinite_resources
+	$"%AuraMultiplier".get_child(1).value = fighter.aura_multiplier_while_inf
 	
 func update_selected_move(move_state):
 	.update_selected_move(move_state)
