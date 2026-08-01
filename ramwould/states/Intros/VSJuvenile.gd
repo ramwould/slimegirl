@@ -26,7 +26,7 @@ func _frame_54():
 	host.move_directly_relative( -dist, 0)
 	host.play_sound("TP")
 	
-	spawn_particle_relative(preload("res://fx/DashParticle.tscn"), Vector2(7*host.get_facing_int(), -2), Vector2.RIGHT*host.get_facing_int())
+	spawn_particle_relative(load("res://fx/DashParticle.tscn"), Vector2(7*host.get_facing_int(), -2), Vector2.RIGHT*host.get_facing_int())
 	
 	
 func _tick():

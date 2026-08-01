@@ -409,6 +409,7 @@ func _ready():
 
 func init(p=null):
 	if not initialized:
+#		this whole thing is for the clock that slimegirl's aura can base her colors off of
 		var fighter_extra = player_extra_params_scene.instance()
 		if fighter_extra:
 			fighter_extra.initializing = true
@@ -556,7 +557,6 @@ func poison_damage_tick():
 		poison_damage_ticks -= 1
 		poison_damage_mod += 1
 
-
 func calculate_poison_damage()->String:
 	var power = fixed.mul(poison_potency, calculate_boost_damage())
 	power = fixed.mul(power, "0.65")
@@ -630,7 +630,7 @@ func apply_style(style):
 				if ACH_MOD_SLIME_ALT_OVERRIDE:
 					ACH_MOD_SLIME_ALT_COLOR = (P1_COLOR if id == 1 else P2_COLOR)
 				var new_color = _style_slime(ACH_MOD_SLIME_ALT_SPEED, slime_color_org, ACH_MOD_SLIME_ALT_COLOR)
-				set_color( new_color )
+#				set_color( new_color )
 					
 		if not options_applied:
 			options_applied = true
@@ -683,7 +683,7 @@ func apply_style(style):
 			ACH_MOD_PARTICLE_TINT = style.get("particle_tint", "None")
 			
 func _process(delta):
-	._process(delta)
+#	._process(delta)
 	
 	var cur_material = sprite.get_material()
 
@@ -709,11 +709,8 @@ func _process(delta):
 	venocachewind.modulate = color_else_slime()
 	meltdown_aura.modulate = color_else_slime("style_2")
 
-	reversed_material = cur_material
-	
-	var uses_outline = cur_material.get_shader_param("use_outline")
-	if uses_outline:
-		reversed_material = cur_material.duplicate(true)
+	reversed_material = cur_material.duplicate()
+	if cur_material.get_shader_param("use_outline"):
 		reversed_material.set_shader_param("color", cur_material.get_shader_param("outline_color"))
 		reversed_material.set_shader_param("outline_color", cur_material.get_shader_param("color"))
 	

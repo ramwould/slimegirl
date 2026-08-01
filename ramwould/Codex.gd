@@ -1,5 +1,8 @@
 extends Node
 
+#	TODO: Add option to fade outline colors
+#	i mean i COULD add it now and it wouldn't be hard, im just lazy :P
+
 const COLOR_NOTE = "#8c8c8c"
 const COLOR_IMPORTANT = "#ffa00d"
 const COLOR_POISON = "#78df2b"
@@ -38,7 +41,7 @@ func register(codex):
 	codex.set_summary("""Some goofy ahh slime girl just crawled out of the toxic waste bin. And then they F...OUGHT!
 
 Slimegirl does [u]very little contact damage[/u], however each hit comes with a good dose of [color=#78df2b]DoT POISON[/color]!
-She was created as a tool for mass extinction by a lone witch in a forest, the goal being to get rid of every magical entity living in the Enchanted Forest, where various pixies and fantasy creatures reside simply because they were being too noisy.
+She was created as a tool for mass extinction by a lone witch in a forest, the goal being to get rid of every magical entity living in the Enchanted Forest, where various pixies and fantasy creatures reside simply because they were being too noisy and interfered constantly with her hex spells.
 
 Slimegirl herself is quite friendly, however her toxic poison keeps most people away from her and naturally kills magic. Due to this, her only real friend is her creator.
 
@@ -57,9 +60,6 @@ The current state of the match will affect how her poison acts as well:
 	) Sadness, an opponent combo, or if the opponent is currently blocking will make her poison tick slower
 	) Opponents in her aura or being in [color=#ff0000][Meltdown][/color] can increase its speed
 	) Opponents standing on her Slimetrails will increase her poison's damage
-
-Poison potency is her main way of determining how much damage her poison will do per tick.
-Actions like keeping the opponent in your radius, having them stand in her slimy trails, or even just being in [color=#ff0000][Meltdown][/color] can all increase the potency of her poison.
 
 [color=#ffa00d]The opponent can [u]burst[/u] or [u]parry[/u] Slimegirl's attacks to get rid of some of her poison![/color]
 
@@ -173,7 +173,8 @@ A fully successful assimilation will enable [color=#5c874e]beam charge[/color].
 	
 	codex.moveset["Meltdown"].desc = """[color=#fff6a9][Meltdown][/color] is a powerful state that significantly weaponizes her poison even more.
 
-[color=#8c8c8c]On use, Slimegirl gains hyper armor if the opponent is in her aura while she has initiative. If she's been hit by the opponent, both Slimegirl and the opponent will gain an interrupt.[/color]
+[color=#8c8c8c]On use, Slimegirl gains hyper armor, both the opponent and herself gain an interrupt the next time she's hit and will attack 4f after.
+If the opponent blocks/gets hit, the attack triggers meltdown and consumes meter.[/color]
 
 While the opponent is standing in her aura, her poison timer will increase every frame. Additionally, anytime the siren blares and the opponent is in her aura, they take damage, and even more poison gets added!
 
@@ -230,10 +231,10 @@ The opponent must end up on a [color=#78df2b]slimetrail[/color] when thrown or e
 Standing in [color=#78df2b]Slimefire[/color] will turn her Slimeballs into exploding fireballs!"""
 	codex.moveset["SlimeballAerial"].visible = false
 	
-	codex.moveset["Venocache"].desc = """Pulls the opponent in to substitute active poison for instant damage based on the potency of Slimegirl's poison.
+	codex.moveset["Venocache"].desc = """Pulls the opponent in to substitute active poison (max %s) for instant damage based on the potency of Slimegirl's poison.
 This move also temporarily increases her aura size, slimetrail width, and slimetrail duration.
 
-It will always pull the opponent towards her aura."""
+It will always pull the opponent towards her aura.""" % [slimegirl.MAX_VENOCACHE_POISON_INTAKE]
 
 	codex.moveset["Allears"].desc = """Slimegirl jumps whenever she hits an opponent below herself.
 Hitting projectiles will cause her to bounce off of it without taking damage. She may only do this once per projectile while she hasn't touched the ground."""
@@ -251,7 +252,7 @@ On landing, if Slimegirl has [color=#5c874e]beam charge[/color], she will releas
 	codex.moveset["24Karot_Grounded"].visible = true
 	codex.moveset["24Karot_Aerial"].visible = true
 	
-	var burst_desc = """Temporarily increases aura size for [color=yellow]%s[/color] frames on use.""" % [slimegirl.RADIUS_SIZE_TIME_BURST]
+	var burst_desc = """Temporarily increases aura size for [color=yellow]%s[/color] frames on use, and adds [color=yellow]%s[/color] unscaled poison on hit.""" % [slimegirl.RADIUS_SIZE_TIME_BURST, slimegirl.TOXIC_BURST_POISON]
 	codex.moveset["DefensiveBurst"].desc = burst_desc
 	codex.moveset["OffensiveBurst"].desc = burst_desc
 	
@@ -259,6 +260,17 @@ On landing, if Slimegirl has [color=#5c874e]beam charge[/color], she will releas
 While moving backwards, Slimegirl will do a much faster lunge with grounded attack invulnerablity on inititative.
 
 This move is only accessible after landing on the ground or from [Mad Dash]"""
+	
+	codex.moveset["Crakshot"].desc = """Can fire an aimable laser while [color=#5c874e]beam charge[/color] is active if this move was used in combo"""
+	
+	codex.moveset["Slap"].desc = """Hitting the opponent [color=yellow]%s[/color] consecutive times in a row enables [color=#5c874e]beam charge[/color]"""
+	
+	codex.moveset["ComboStarter"].desc = """Changes her stance into Sloppy Stance.
+
+This stance disables poison DoT and general poison gain and exchanges it for increased raw melee damage that scales based on the amount of poison she has when entering the stance (with a poison cap of %s) and takes away 12% of that poison per hit.
+
+Goop will automatically be applied to the opponent or any clones that she hits while in this stance.
+She exits the stance once she has 0 poison left.""" % [slimegirl.MAX_VENOCACHE_POISON_INTAKE]
 	
 	codex.add_custom_text_tab("{Copybuny} / {Noxipaste}",
 """With her super, Slimegirl can duplicate her current move, storing its data and momentum as a clone accessible through [color=#e0a9ff]{Noxipaste}[/color].
@@ -273,9 +285,13 @@ Any clones that fail to be created will not consume super.[/color]
 """)
 
 	codex.add_custom_text_tab("THE CREDITS",
-"""Special thanks to all the people who helped me out in the Yomi Modding and Bracketeering Discords, I actually was not expecting Slimegirl to be as liked as much as she is.
+"""Special thanks to:
+- Cogwheel
+- e
+- Myself :3
+- And all the lovely people who helped me out in the Yomi Modding and Bracketeering Discords, I actually was not expecting Slimegirl to be as liked as much as she is.
 
-She wouldn't be nearly as good right now if not for them!
+She wouldn't be nearly as good right now if not for them! <3
 """)
 
 func setup_achievements(list):
@@ -404,9 +420,7 @@ func setup_options(options, params):
 	options.add_toggle("slime_alt_reversed", "Swap Fade Color Positions?", false)
 	options.add_seperator()
 	options.add_seperator()
-#	TODO: Add option to fade outline colors
-#	i mean i COULD add it now and it wouldn't be hard, im just lazy :P
-	
+
 	options.add_color("s1_alt_color", "Aura Color", "00b035")
 	options.add_label("[right][color=gray]Default: 00b035")
 	options.add_label("[color=gray]Fade between Aura Color and current style color 1")
