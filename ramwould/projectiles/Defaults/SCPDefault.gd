@@ -2,6 +2,8 @@ extends DefaultFireball
 
 onready var hitbox = $Hitbox
 
+const VFX = preload("res://slimegirl/ramwould/FX/CrackleFX.tscn")
+
 func _tick():
 	._tick()
 	
@@ -10,5 +12,5 @@ func _tick():
 	
 	if hitbox.enabled:
 #	if current_tick % (hitbox.loop_active_ticks+hitbox.loop_inactive_ticks) == 0:
-		spawn_particle_relative(preload("res://slimegirl/ramwould/FX/CrackleFX.tscn"), Vector2(), Vector2())
+		spawn_particle_relative(VFX)
 		

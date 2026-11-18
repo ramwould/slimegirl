@@ -95,7 +95,8 @@ While attached, Slimegirl gains the option to yank herself towards the gooped ar
 			var has_poison_enabled = false
 			for node in state.get_children():
 				if node is Hitbox:
-					if node is slimegirl.SLIMEBOX:
+					var slimebox = load("res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd")
+					if node is slimebox:
 						if node.add_poison:
 							has_poison_enabled = true
 					if ("poison" in node.misc_data):
@@ -179,9 +180,7 @@ If the opponent blocks/gets hit, the attack triggers meltdown and consumes meter
 While the opponent is standing in her aura, her poison timer will increase every frame. Additionally, anytime the siren blares and the opponent is in her aura, they take damage, and even more poison gets added!
 
 Slimegirl can blow up any existing clones created from [color=#e0a9ff]{Copybuny}[/color] on use, and all clones that exist in her aura afterwards for each turn she gets.
-[color=#8c8c8c]Note: She cannot blow up clones and[/color] [color=#e0a9ff]{Copybuny}[/color] [color=#8c8c8c]at the same time[/color].
-
-This move lasts until she's been hit or when its lifetime is over."""
+[color=#8c8c8c]Note: She cannot blow up clones and[/color] [color=#e0a9ff]{Copybuny}[/color] [color=#8c8c8c]at the same time[/color]."""
 	codex.moveset["Meltdown"].set_gimmick_tick(7, "[Meltdown] Starts")
 	codex.moveset["Meltdown"].custom_stats["Duration"] = slimegirl.MAX_MELTDOWN_TICKS
 	
@@ -236,8 +235,8 @@ This move also temporarily increases her aura size, slimetrail width, and slimet
 
 It will always pull the opponent towards her aura.""" % [slimegirl.MAX_VENOCACHE_POISON_INTAKE]
 
-	codex.moveset["Allears"].desc = """Slimegirl jumps whenever she hits an opponent below herself.
-Hitting projectiles will cause her to bounce off of it without taking damage. She may only do this once per projectile while she hasn't touched the ground."""
+	codex.moveset["Allears"].desc = """Slimegirl jumps with DI influence whenever she hits an opponent below herself.
+Hitting projectiles will also cause her to bounce off of it without taking damage. She may only do this once per projectile while she hasn't touched the ground."""
 	
 	codex.moveset["Slopdrop"].desc = """Fall from the air, hitting anything along the way!
 
@@ -263,11 +262,11 @@ This move is only accessible after landing on the ground or from [Mad Dash]"""
 	
 	codex.moveset["Crakshot"].desc = """Can fire an aimable laser while [color=#5c874e]beam charge[/color] is active if this move was used in combo"""
 	
-	codex.moveset["Slap"].desc = """Hitting the opponent [color=yellow]%s[/color] consecutive times in a row enables [color=#5c874e]beam charge[/color]"""
+	codex.moveset["Slap"].desc = """Hitting the opponent [color=yellow]%s[/color] consecutive times in a row enables [color=#5c874e]beam charge[/color]""" % [slimegirl.MAX_SLAP_USES / 2]
 	
 	codex.moveset["ComboStarter"].desc = """Changes her stance into Sloppy Stance.
 
-This stance disables poison DoT and general poison gain and exchanges it for increased raw melee damage that scales based on the amount of poison she has when entering the stance (with a poison cap of %s) and takes away 12% of that poison per hit.
+This stance disables poison DoT and general poison gain and exchanges it for increased raw melee damage that scales based on the amount of poison she has when entering the stance (with a poison cap of %s) and takes away 12 percent of that poison per hit.
 
 Goop will automatically be applied to the opponent or any clones that she hits while in this stance.
 She exits the stance once she has 0 poison left.""" % [slimegirl.MAX_VENOCACHE_POISON_INTAKE]
@@ -456,7 +455,7 @@ func setup_options(options, params):
 	options.add_seperator()
 	
 	var active_settings = params.codex_library.load_all_char_options(params.char_path)
-	options.add_custom_scene("aura_editor", preload("res://slimegirl/ramwould/codex_stuff/AuraPreview.tscn"), DEFAULT_AURA_DATA, active_settings)
+	options.add_custom_scene("aura_editor", load("res://slimegirl/ramwould/codex_stuff/AuraPreview.tscn"), DEFAULT_AURA_DATA, active_settings)
 	
 func append_fade_options(options):
 	options.add_item("Off")

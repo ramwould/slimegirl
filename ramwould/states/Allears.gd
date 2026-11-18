@@ -2,6 +2,7 @@ extends "res://slimegirl/ramwould/states/SlimeState.gd"
 
 var force_applied = false
 const MINIMUM_TO_BOUNCE = "-2"
+const DI_FORCE = "5"
 
 func _frame_6():
 	if host.initiative:
@@ -31,7 +32,9 @@ func bounce_fighter():
 	if fixed.ge( host.get_vel().y, MINIMUM_TO_BOUNCE ):
 		force_applied = true
 		host.set_vel(fixed.div(host.get_vel().x,"2"), "0")
-		host.apply_force_relative("0", consecutive_force)
+		
+		var x_di_force = xy_to_dir(host.current_di.x, host.current_di.y, DI_FORCE).x
+		host.apply_force(x_di_force, consecutive_force)
 	
 	spawn_particle_relative(particle_scene, Vector2(0, -6), Vector2.UP)
 	queue_state_change("AllearsJump")
@@ -48,7 +51,9 @@ func detect(obj):
 			if fixed.ge( host.get_vel().y, MINIMUM_TO_BOUNCE ):
 				force_applied = true
 				host.set_vel(host.get_vel().x, "0")
-				host.apply_force_relative("0", consecutive_force)
+				
+				var x_di_force = xy_to_dir(host.current_di.x, host.current_di.y, DI_FORCE).x
+				host.apply_force(x_di_force, consecutive_force)
 		
 		obj.update_data()
 		if fixed.lt( obj.get_vel().y,"0" ):

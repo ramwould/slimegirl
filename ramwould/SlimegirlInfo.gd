@@ -25,25 +25,26 @@ func on_position_changed(under):
 		$"%AuraButton".pressed = fighter.modMain.get("show_aura_in_match_p%s" % player_id)
 	
 func _process(delta):
-	total_poison.text = "Active Poison: %sf" % fighter.poison_time
-	total_poison_replay.text = "Poison: %sf" % fighter.poison_time
-	added_poison.text = "Added Poison: %sf" % fighter.poison_gained_this_turn
+	if is_instance_valid(fighter):
+		total_poison.text = "Active Poison: %sf" % fighter.poison_time
+		total_poison_replay.text = "Poison: %sf" % fighter.poison_time
+		added_poison.text = "Added Poison: %sf" % fighter.poison_gained_this_turn
 			
-	total_poison.hide()
-	total_poison_replay.hide()
-	added_poison.hide()
-	var game:Game = Global.current_game
-	if game.game_paused:
-		total_poison.show()
-		if fighter.poison_gained_this_turn != 0:
-			added_poison.show()
+		total_poison.hide()
+		total_poison_replay.hide()
+		added_poison.hide()
+		var game:Game = Global.current_game
+		if game.game_paused:
+			total_poison.show()
+			if fighter.poison_gained_this_turn != 0:
+				added_poison.show()
 			
-	else:
-		total_poison_replay.show()
+		else:
+			total_poison_replay.show()
 		
 
-	if fighter:
-		fighter.modMain.set("show_aura_in_match_p%s" % player_id, $"%AuraButton".pressed)
+		if fighter:
+			fighter.modMain.set("show_aura_in_match_p%s" % player_id, $"%AuraButton".pressed)
 		
 	update()
 	

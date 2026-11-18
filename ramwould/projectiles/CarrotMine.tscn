@@ -25,7 +25,6 @@ immunity_susceptible = false
 deletes_other_projectiles = false
 movable = false
 apply_hitlag_when_hit_by_melee = false
-hookable = true
 allow_host_hit_cancelling = false
 allow_projectile_to_damage_slimegirl = false
 slime_color_to_use = "84e5a1"

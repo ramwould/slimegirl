@@ -1,6 +1,6 @@
 extends "res://slimegirl/ramwould/states/SLOPPY STANCE/SlopState.gd"
 
-const SPEED_FORWARD = "14.0"
+const SPEED_FORWARD = "15.0"
 const SPEED_BACKWARD = "-8.0"
 
 func _frame_0():
@@ -38,7 +38,7 @@ func _frame_7():
 	
 func _tick():
 	host.apply_forces_no_limit()
-	host.limit_speed("22.0")
+	host.limit_speed("20.0")
 	
 	if current_tick > 1:
 		host.apply_fric()

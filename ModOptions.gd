@@ -12,3 +12,12 @@ func _ready():
 	my_menu.add_bool("show_damage_prediction", "Show prediction poison damage?", true)
 	
 	add_menu(my_menu)
+
+func _SL_settings_menu_opened(node):
+	pass
+
+func _SL_settings_menu_closed(node):
+	pass
+
+func _SL_settings_late_init(node):
+	pass

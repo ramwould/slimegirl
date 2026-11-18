@@ -31,13 +31,15 @@ func _frame_7():
 	host.play_sound("CountdownSound3")
 	spawn_countdown(3)
 
+const BARRELFX = preload("res://slimegirl/ramwould/FX/BarrelHitFX.tscn")
+
 func _frame_42():
 	host.play_sound("CountdownSound2")
 	host.play_sound("IntroBarrelHit")
 	host.play_sound("HitBass")
 	host.screen_bump(Vector2.LEFT*host.get_facing_int(), 11.0, Utils.frames(7))
 	spawn_countdown(2)
-	spawn_particle_relative(preload("res://slimegirl/ramwould/FX/BarrelHitFX.tscn"), Vector2(-21*host.get_facing_int(), -24), Vector2.LEFT*host.get_facing_int())
+	spawn_particle_relative(BARRELFX, Vector2(-21*host.get_facing_int(), -24), Vector2.LEFT*host.get_facing_int())
 
 func _frame_77():
 	host.play_sound("CountdownSound1")
@@ -45,7 +47,7 @@ func _frame_77():
 	host.play_sound("HitBass")
 	host.screen_bump(Vector2.RIGHT*host.get_facing_int(), 11.0, Utils.frames(7))
 	spawn_countdown(1)
-	spawn_particle_relative(preload("res://slimegirl/ramwould/FX/BarrelHitFX.tscn"), Vector2(11*host.get_facing_int(), -14), Vector2.RIGHT*host.get_facing_int())
+	spawn_particle_relative(BARRELFX, Vector2(11*host.get_facing_int(), -14), Vector2.RIGHT*host.get_facing_int())
 
 func _frame_95():
 	host.play_sound("IntroBounce")
@@ -54,7 +56,7 @@ func _frame_95():
 	host.screen_bump(Vector2.UP, 15.0, Utils.frames(15))
 	
 	var pos = Vector2(26*host.get_facing_int(), -17)+host.get_pos_visual()
-	host._spawn_particle_effect(preload("res://slimegirl/ramwould/FX/BarrelExplosionFX.tscn"), pos, Vector2(), host.color_else_slime())
+	host._spawn_particle_effect(BARRELFX, pos, Vector2(), host.color_else_slime())
 	
 	var pos2 = Vector2(26*host.get_facing_int(), -17)
 	spawn_particle_relative(preload("res://fx/JumpParticle.tscn"), pos2, Vector2.UP)

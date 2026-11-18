@@ -10,7 +10,7 @@ func _enter():
 	dir_y = dir.y
 	
 func _frame_6():
-	var obj:BaseProjectile = host.spawn_object(preload("res://slimegirl/ramwould/projectiles/SnapCracklePopProj.tscn"), 18, -23)
+	var obj:BaseProjectile = host.spawn_object(load("res://slimegirl/ramwould/projectiles/SnapCracklePopProj.tscn"), 18, -23)
 	obj.init(null)
 	obj.current_state().move_x = int(dir_x)*host.get_facing_int()
 	obj.current_state().move_y = int(dir_y)

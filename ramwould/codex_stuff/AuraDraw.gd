@@ -16,6 +16,9 @@ var valid_slime_color = true
 
 var style1_color = Color("00b035")
 var style2_color = Color.red
+var outline_color = Color.white
+var has_outline = false
+
 const DEFAULT_RED = Color("aca2ff")
 const DEFAULT_BLU = Color("ff7a81")
 
@@ -27,6 +30,8 @@ const DEFAULT_STYLE = {
 	"use_outline": false,
 	"outline_color": Color.black,
 }
+
+onready var outlines = [$"%OUTLINE1", $"%OUTLINE2", $"%OUTLINE3", $"%OUTLINE4", $"%OUTLINE5", $"%OUTLINE6", $"%OUTLINE7", $"%OUTLINE8"]
 
 func _ready():
 	$"%Hit".connect("pressed", self, "_on_hit_button")
@@ -48,6 +53,10 @@ func _process(delta):
 	
 	
 	$"%TextureRect".self_modulate = _style_slime(host.slime_alt_speed, slime_color, Color(host.slime_alt_color))
+	for node in outlines:
+		node.visible = has_outline
+		node.self_modulate = _style_slime("None", outline_color, Color.white)
+		
 	aura_color = _style_slime(host.s1_alt_speed, style1_color, Color(host.s1_alt_color))
 	if in_meltdown_mimic():
 		aura_color = _style_slime(host.s2_alt_speed, style2_color, Color(host.s2_alt_color))
@@ -143,7 +152,6 @@ func _draw():
 	assimilate_flash.a = max(assimilate_alpha,0.12)
 	var shape_color = aura_color
 	shape_color.a = 0.50
-#	var texture :Texture= preload("res://slimegirl/ramwould/FX/sprites/big_circle01.tres")
 	draw_colored_polygon(points_poly, assimilate_flash, points_poly, null, null, false)
 	draw_polyline(points_aura, aura_color, 2.0)
 	
@@ -246,7 +254,6 @@ func _draw():
 					var out = wrapi(i+1, 0, num_points-1)
 					draw_line(points[i], points[out], shape_color, STARR_SHAPE_THICKNESS-4.0, false)
 					
-
 func _on_Slimegirl_poison_booster():
 	if assimilate_tween and assimilate_tween.is_running():
 		assimilate_tween.kill()
@@ -264,10 +271,11 @@ func reset_style_colors():
 #	if $"%PreviewStyle".selected == 0:
 #		s_color = DEFAULT_BLU if $"%REDBLU".pressed else DEFAULT_RED
 	var s_color = DEFAULT_BLU if $"%REDBLU".pressed else DEFAULT_RED
-	
 	set_style_colors( "slime", s_color)
 	set_style_colors( "style1", DEFAULT_STYLE["extra_color_1"] )
 	set_style_colors( "style2", DEFAULT_STYLE["extra_color_2"] )
+	has_outline = false
+	set_style_colors( "outline", DEFAULT_STYLE["outline_color"] )
 
 func _on_PreviewStyle_item_selected(index: int) -> void:
 	reset_style_colors()
@@ -281,6 +289,10 @@ func _on_PreviewStyle_item_selected(index: int) -> void:
 			set_style_colors( "style1", host.styles[index]["extra_color_1"] )
 		if host.styles[index]["extra_color_2"]:
 			set_style_colors( "style2", host.styles[index]["extra_color_2"] )
+		if host.styles[index]["use_outline"]:
+			has_outline = host.styles[index]["use_outline"]
+		if host.styles[index]["outline_color"]:
+			set_style_colors( "outline", host.styles[index]["outline_color"] )
 	
 func _on_PreviewStyle_visibility_changed() -> void:
 	reset_style_colors()

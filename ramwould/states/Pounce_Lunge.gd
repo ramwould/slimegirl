@@ -41,7 +41,7 @@ func _frame_6():
 	host.opponent.colliding_with_opponent = false
 	host.apply_force_relative(x_speed, "-3.8")
 
-func _frame_10():
+func _frame_13():
 	host.end_grounded_attack_invulnerability()
 	
 func _frame_19():
@@ -52,26 +52,29 @@ func _tick():
 	
 	land_cancel_state = "Tumble"
 	if got_blocked:
-		land_cancel_state = "Landing"
+#		land_cancel_state = "Landing"
 		host.colliding_with_opponent = true
 		host.opponent.colliding_with_opponent = true
+		host.end_grounded_attack_invulnerability()
 		
 func on_got_blocked():
 	got_blocked = true
 	lunge_boost_possible = false
+	host.end_grounded_attack_invulnerability()
 	
 func on_got_hit():
 	lunge_boost_possible = false
 	
 func on_got_perfect_parried():
 	lunge_boost_possible = false
+	host.end_grounded_attack_invulnerability()
 	
 func is_usable():
-	if not .is_usable():
-		return false
+	if not .is_usable(): return false
 		
 	var cur_state = host.current_state().state_name
-	if cur_state == "MadDash" or cur_state == "MadBrake" or cur_state == "SlopdropLanding" or cur_state == "Landing":
+	var ACCEPTED = ["MadDash", "MadBrake", "SlopdropLanding", "Landing"]
+	if cur_state in ACCEPTED:
 		return true
 	var prev :CharacterState= _previous_state()
 	if prev:

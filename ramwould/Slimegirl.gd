@@ -4,8 +4,8 @@ signal poison_booster()
 signal meltdown_alarm()
 signal chernobyl_fire()
 
-const SLIMEBOX := preload("res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd")
-const BEAMBOX := preload("res://slimegirl/ramwould/hitboxes/BeamHitbox.gd")
+#const SLIMEBOX := preload("res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd")
+#const BEAMBOX := preload("res://slimegirl/ramwould/hitboxes/BeamHitbox.gd")
 
 class_name _SLIMEGIRL
 
@@ -165,7 +165,6 @@ const BOOST_TIME_MELTDOWN = 150
 const MAX_BOOST_TICKS = 500
 const MAX_BOOST_MOD = "2.00"
 const MAX_SLIMETRAIL_DIST = 50
-const SLIMETRAIL_SCENE := preload("res://slimegirl/ramwould/projectiles/SlimeFloor.tscn")
 const SLIMETRAIL_FRIC = "0.08"
 const SLIMETRAIL_FRIC_HIGH = "0.19"
 const SLIMEFIRE_DAMAGE = 1
@@ -199,16 +198,6 @@ const MAX_YANK_FORCE_AERIAL = "16.5"
 const MAX_YANK_FORCE_GROUNDED = "11.0"
 const MAX_YANK_TICKS = 60
 const TOXIC_BURST_POISON = 50
-
-const SLIMEPOISON_FX := preload("res://slimegirl/ramwould/FX/SlimePoisonFX.tscn")
-const ASSIMILATE_FX := preload("res://slimegirl/ramwould/FX/AssimilateFX.tscn")
-const MELTDOWN_FX := preload("res://slimegirl/ramwould/FX/MeltdownFX.tscn")
-const EXPANDING_FX := preload("res://slimegirl/ramwould/FX/afterimages/Expanding01.tscn")
-const MELT_FX := preload("res://slimegirl/ramwould/FX/MeltFX.tscn")
-
-const BEAM_SCENE = preload("res://slimegirl/ramwould/projectiles/BasicBeam.tscn")
-const SHOKWAVE_SCENE = preload("res://slimegirl/ramwould/projectiles/BeamShockwave.tscn")
-const SLIMECLONE_SCENE = preload("res://slimegirl/ramwould/projectiles/Slimeclone.tscn")
 
 #	EXTERNAL STUFF
 var Original
@@ -503,7 +492,7 @@ func poison_tick():
 		var opponent_pos_global = opponent.get_center_position_float()
 		var color = color_else_slime()
 		color.a = MOD_BUBBLES_OPACITY_MULT
-		_spawn_particle_effect(SLIMEPOISON_FX, opponent_pos_global, Vector2(), color)
+		_spawn_particle_effect(preload("res://slimegirl/ramwould/FX/SlimePoisonFX.tscn"), opponent_pos_global, Vector2(), color)
 
 	var damage:int = fixed.round( calculate_poison_damage() )
 	var minimum:int = fixed.round( calculate_poison_damage() ) / 3
@@ -589,7 +578,7 @@ func boost_poison(ticks:int = -1, effect = true):
 	
 	if effect:
 		var pos = radius_center()
-		_spawn_particle_effect(ASSIMILATE_FX, pos, Vector2(), color_else_slime("style_1"))
+		_spawn_particle_effect(preload("res://slimegirl/ramwould/FX/AssimilateFX.tscn"), pos, Vector2(), color_else_slime("style_1"))
 		
 		play_sound("PoisonBoost")
 		play_sound("HitBass")
@@ -1228,12 +1217,12 @@ func create_slime_trail(obj_or_position, detect_other_trails=true):
 	if obj_or_position is BaseObj:
 		if (detect_other_trails and not slimetrail_near_obj(obj_or_position) and obj_or_position.data and obj_or_position.get_pos().y == 0) or not detect_other_trails:
 			var pos = obj_or_position.get_hurtbox_center()
-			var trail = spawn_object(SLIMETRAIL_SCENE, pos.x, 0, false, null, false)
+			var trail = spawn_object(load("res://slimegirl/ramwould/projectiles/SlimeFloor.tscn"), pos.x, 0, false, null, false)
 			trail.slime_length = get_slimetrail_dist()
 			trail_array.append(trail.name)
 			
 	if (obj_or_position is Dictionary) or (obj_or_position is Vector2):
-		var trail = spawn_object(SLIMETRAIL_SCENE, int(obj_or_position.x), 0, false, null, false)
+		var trail = spawn_object(load("res://slimegirl/ramwould/projectiles/SlimeFloor.tscn"), int(obj_or_position.x), 0, false, null, false)
 		trail.slime_length = get_slimetrail_dist()
 		trail_array.append(trail.name)
 	
@@ -1393,7 +1382,7 @@ func _chernobyl_tick():
 	
 func meltdown_pulse(deal_damage = true):
 	var pos = radius_center()
-	_spawn_particle_effect(MELTDOWN_FX, pos, Vector2(), color_else_slime("style_2"))
+	_spawn_particle_effect(preload("res://slimegirl/ramwould/FX/MeltdownFX.tscn"), pos, Vector2(), color_else_slime("style_2"))
 
 	emit_signal("poison_booster")
 	if MOD_MELTDOWN_EFFECT:
@@ -1478,8 +1467,8 @@ func _on_hit_something(obj, hitbox):
 		
 		var is_noxipaste_hit = noxipaste_this_turn and current_slimeclone_state_name == current_state().state_name and not hitbox.is_projectile()
 		var can_apply_poison = ((stance == "Sloppy") and hitbox.is_projectile() or stance != "Sloppy")
-		
-		if (hitbox is SLIMEBOX):
+		var slimebox = load("res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd")
+		if (hitbox is slimebox):
 			var applied_poison = calculate_poison_ticks(state, hitbox, is_noxipaste_hit)
 			if hitbox.add_poison:
 				if can_apply_poison:
@@ -1514,7 +1503,8 @@ func on_got_blocked_by(who):
 			for hitbox_name in who.parried_hitboxes:
 				var hitbox = who.hitbox_from_name(hitbox_name)
 				if hitbox:
-					if (hitbox is SLIMEBOX):
+					var slimebox = load("res://slimegirl/ramwould/hitboxes/SlimeHitbox.gd")
+					if (hitbox is slimebox):
 						if hitbox.add_poison and hitbox.enabled and hitbox.active:
 							real_hitbox = hitbox
 							break
@@ -1655,7 +1645,7 @@ func calculate_poison_ticks(state, hitbox, noxipaste_hit=false)->int:
 func spawn_basic_beam(x:int, y:int, hitbox:SweptHitbox, from=self)->BaseProjectile:
 	var new = hitbox.to_data()
 	
-	var obj:BaseProjectile = from.spawn_object(BEAM_SCENE, x, y)
+	var obj:BaseProjectile = from.spawn_object(preload("res://slimegirl/ramwould/projectiles/BasicBeam.tscn"), x, y)
 	obj.beam_direction = hitbox.get("beam_direction")
 	obj.stop_at_ground = hitbox.get("stop_at_ground")
 	obj.show_base = hitbox.get("show_base")
@@ -1693,7 +1683,7 @@ func spawn_shockwave(global_pos:Vector2, parry_window=true):
 	play_sound("BeamShockwave")
 	_spawn_particle_effect(preload("res://slimegirl/ramwould/FX/ShockwaveTrailFX.tscn"), global_pos, Vector2(), color_else_slime("outline"))
 	for p_dir in [1, -1]:
-		var wave:BaseProjectile = spawn_object(SHOKWAVE_SCENE, global_pos.x, 0, false, null, false)
+		var wave:BaseProjectile = spawn_object(load("res://slimegirl/ramwould/projectiles/BeamShockwave.tscn"), global_pos.x, 0, false, null, false)
 		wave.set_facing(p_dir)
 		wave.has_projectile_parry_window = parry_window
 		if on_fire_this_state:
@@ -1702,7 +1692,7 @@ func spawn_shockwave(global_pos:Vector2, parry_window=true):
 func spawn_shockwave_one(global_pos:Vector2, p_facing:int, parry_window=true):
 	play_sound("BeamShockwave")
 	_spawn_particle_effect(preload("res://slimegirl/ramwould/FX/ShockwaveTrailFX.tscn"), global_pos, Vector2(), color_else_slime("outline"))
-	var wave:BaseProjectile = spawn_object(SHOKWAVE_SCENE, global_pos.x, 0, false, null, false)
+	var wave:BaseProjectile = spawn_object(load("res://slimegirl/ramwould/projectiles/BeamShockwave.tscn"), global_pos.x, 0, false, null, false)
 	wave.set_facing(p_facing)
 	wave.has_projectile_parry_window = parry_window
 	if on_fire_this_state:
@@ -1952,9 +1942,9 @@ func try_create_clone():
 				lerp_color.a = 0.7
 				create_speed_after_image(lerp_color, Utils.frames(8), aftertrail_pos)
 		
-		var clone:BaseProjectile = spawn_object(SLIMECLONE_SCENE, clone_spawn_vector.x, clone_spawn_vector.y, false, null, false)
+		var clone:BaseProjectile = spawn_object(preload("res://slimegirl/ramwould/projectiles/Slimeclone.tscn"), clone_spawn_vector.x, clone_spawn_vector.y, false, null, false)
 		setup_clone(clone)
-		_spawn_particle_effect(MELT_FX,clone.get_hurtbox_center_float(),Vector2(),color_else_slime("outline"))
+		_spawn_particle_effect(load("res://slimegirl/ramwould/FX/MeltFX.tscn"),clone.get_hurtbox_center_float(),Vector2(),color_else_slime("outline"))
 
 		if slimeclone_data.size() > MAX_COPYBUNY_CLONES:
 			var remove_clone = get_slimeclone(0, slimeclone_data)
@@ -2039,8 +2029,8 @@ func try_teleport_clone():
 		noxipaste_queue_active = false
 		play_sound("Noxipaste")
 		add_penalty(10)
-		_spawn_particle_effect(MELT_FX, clone.get_hurtbox_center_float(),Vector2(),color_else_slime("outline"))
-		_spawn_particle_effect(MELT_FX,get_hurtbox_center_float(),Vector2(),color_else_slime())
+		_spawn_particle_effect(load("res://slimegirl/ramwould/FX/MeltFX.tscn"), clone.get_hurtbox_center_float(),Vector2(),color_else_slime("outline"))
+		_spawn_particle_effect(load("res://slimegirl/ramwould/FX/MeltFX.tscn"),get_hurtbox_center_float(),Vector2(),color_else_slime())
 		
 		clone.update_data()
 		var clone_pos = clone.get_pos()
@@ -2122,7 +2112,7 @@ func try_explode_clone(indexes=[], hit_cancel=true, lag=0):
 	play_sound("Noxipaste")
 	
 	for obj in clone_array:		
-		_spawn_particle_effect(MELT_FX, obj.get_hurtbox_center_float(),Vector2(),color_else_slime("outline"))
+		_spawn_particle_effect(load("res://slimegirl/ramwould/FX/MeltFX.tscn"), obj.get_hurtbox_center_float(),Vector2(),color_else_slime("outline"))
 		obj.safely_disable = false
 		obj.allow_host_hit_cancelling = hit_cancel
 		obj.primed = lag+1
@@ -2154,7 +2144,7 @@ func create_speed_after_image(color:Color = Color.white, lifetime = 0.2, offset 
 	call_deferred("_create_clone_line", color, lifetime, offset)
 
 func _create_clone_line(color:Color = Color.white, lifetime = 0.2, offset = Vector2.ZERO):
-	var speed_image_effect = preload("res://fx/SpeedImageEffect.tscn")
+	var speed_image_effect = load("res://fx/SpeedImageEffect.tscn")
 	var texture = sprite.frames.get_frame(sprite.animation, sprite.frame)
 	var effect = _spawn_particle_effect(speed_image_effect, get_pos_visual() + sprite.offset + offset)
 	effect.set_texture(texture)
@@ -2344,7 +2334,7 @@ func use_beam_charge():
 	global_hitlag(3, false)
 	
 func beam_charge_queued_effect():
-	var speed_image_effect = EXPANDING_FX
+	var speed_image_effect = load("res://slimegirl/ramwould/FX/afterimages/Expanding01.tscn")
 	var texture = sprite.frames.get_frame(sprite.animation, sprite.frame)
 	var effect = _spawn_particle_effect(speed_image_effect, get_pos_visual() + sprite.offset)
 	effect.set_texture(texture)

@@ -1,7 +1,6 @@
 extends ThrowState
 
 const IMPALE_FX = preload("res://slimegirl/ramwould/FX/SmashFX.tscn")
-const MINE_SCENE = preload("res://slimegirl/ramwould/projectiles/CarrotMine.tscn")
 
 func _enter():
 	._enter()
@@ -12,8 +11,10 @@ func _frame_11():
 	host.enable_beam_charge()
 	spawn_particle_relative(IMPALE_FX, Vector2(10, 0))
 	
-	var mine :BaseProjectile= host.spawn_object(MINE_SCENE, 0, 0)
+	var mine :BaseProjectile= host.spawn_object(load("res://slimegirl/ramwould/projectiles/CarrotMine.tscn"), 0, 0)
 	mine.z_index = 50
+	mine.set_material( host.sprite.get_material() )
+	
 	host.carrotmine = mine.name
 	
 func _frame_16():

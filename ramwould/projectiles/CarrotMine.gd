@@ -2,7 +2,7 @@ extends "res://slimegirl/ramwould/projectiles/PoisonProjectile.gd"
 
 var set_pos_x = 0
 var set_pos_y = 0
-
+	
 func disable():
 	
 	update_data()

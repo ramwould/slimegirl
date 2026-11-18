@@ -17,8 +17,9 @@ func _enter():
 		else:
 			return fallback_state
 		
+		var beambox = load("res://slimegirl/ramwould/hitboxes/BeamHitbox.gd")
 		for hitbox in get_children():
-			if hitbox is host.BEAMBOX:
+			if hitbox is beambox:
 				hitbox.beam_direction = host.helix_direction
 				hitbox.active_ticks = host.helix_duration
 		
@@ -50,8 +51,9 @@ func can_beam_spawn():
 
 func on_beam_shot():
 	var hitbox :Hitbox
+	var beambox = load("res://slimegirl/ramwould/hitboxes/BeamHitbox.gd")
 	for h in get_children():
-		if h is host.BEAMBOX:
+		if h is beambox:
 			hitbox = h
 	
 	host.super_effect(super_freeze_ticks_)
